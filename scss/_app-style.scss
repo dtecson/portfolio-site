@@ -1,0 +1,93 @@
+.color-1{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#48555b+0,002735+100 */
+  background: #48555b; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #48555b 0%, #002735 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#48555b), color-stop(100%,#002735)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #48555b 0%,#002735 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #48555b 0%,#002735 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #48555b 0%,#002735 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #48555b 0%,#002735 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48555b', endColorstr='#002735',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+  color:$white;
+}
+
+.color-2{
+  background-color: #3F6170;
+  color:$white;
+}
+
+.color-3{
+  background-color: #90A99C;
+}
+
+.color-4{
+  background-color: #D1DBBE;
+}
+
+.row {
+  &.full-width {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+  }
+
+  .row{
+    margin: 0 auto;
+    max-width: $row-width;
+  }
+}
+
+#intro{
+  color: $white;
+
+  section{
+    padding: 175px 0 175px 0;
+  }
+
+  .i-am{
+    font-size: 3em;
+
+    span{
+      color:#EB2424;
+    }
+  }
+}
+
+#my-process{
+  h2{
+    color: #D1DBBE;
+  }
+  section{
+    padding: 50px 0;
+  }
+}
+
+#my-portfolio{
+  section{
+    padding: 50px 0;
+  }
+
+  li.grid__item{
+    padding: 2px;
+  }
+  .card{
+    background-color: $steel;
+    padding: 0px;
+    min-height: 120px;
+  }
+}
+
+#me{
+  section{
+    padding: 50px 0;
+  }
+}
+
+#my-contact-info{
+  section{
+    padding: 50px 0;
+  }
+}
