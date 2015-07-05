@@ -9980,17 +9980,16 @@ button:focus {
 }
 /* line 477, ../scss/components/_animated-grid.scss */
 .category ul li:last-child:after {
-  content: "s ";
+  content: " ";
 }
 
 /* line 1, ../scss/components/_captions-hover-effect.scss */
-.grid figure {
+figure.card {
   margin: 0;
   position: relative;
 }
-
-/* line 6, ../scss/components/_captions-hover-effect.scss */
-.grid figure img {
+/* line 5, ../scss/components/_captions-hover-effect.scss */
+figure.card img {
   max-width: 100%;
   display: block;
   position: relative;
@@ -10001,25 +10000,29 @@ button:focus {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 20px 0;
   background: #2c3f52;
   color: #CCCCCC;
 }
+/* line 20, ../scss/components/_captions-hover-effect.scss */
+.grid figcaption ul.involve-list {
+  margin: 0;
+}
 
 /* Caption Style 3 */
-/* line 22, ../scss/components/_captions-hover-effect.scss */
+/* line 26, ../scss/components/_captions-hover-effect.scss */
 .cs-style-3 figure {
   overflow: hidden;
 }
 
-/* line 26, ../scss/components/_captions-hover-effect.scss */
+/* line 30, ../scss/components/_captions-hover-effect.scss */
 .cs-style-3 figure img {
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
 }
 
-/* line 32, ../scss/components/_captions-hover-effect.scss */
+/* line 36, ../scss/components/_captions-hover-effect.scss */
 .no-touch .cs-style-3 figure:hover img,
 .cs-style-3 figure.cs-hover img {
   -webkit-transform: translateY(-50px);
@@ -10028,7 +10031,7 @@ button:focus {
   transform: translateY(-50px);
 }
 
-/* line 40, ../scss/components/_captions-hover-effect.scss */
+/* line 44, ../scss/components/_captions-hover-effect.scss */
 .cs-style-3 figcaption {
   height: 100px;
   width: 100%;
@@ -10044,7 +10047,7 @@ button:focus {
   transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-/* line 55, ../scss/components/_captions-hover-effect.scss */
+/* line 59, ../scss/components/_captions-hover-effect.scss */
 .no-touch .cs-style-3 figure:hover figcaption,
 .cs-style-3 figure.cs-hover figcaption {
   opacity: 1;
@@ -10057,7 +10060,7 @@ button:focus {
   transition: transform 0.4s, opacity 0.1s;
 }
 
-/* line 67, ../scss/components/_captions-hover-effect.scss */
+/* line 71, ../scss/components/_captions-hover-effect.scss */
 .cs-style-3 figcaption a {
   position: absolute;
   bottom: 20px;
@@ -10065,7 +10068,7 @@ button:focus {
 }
 
 /* Caption Style 4 */
-/* line 74, ../scss/components/_captions-hover-effect.scss */
+/* line 78, ../scss/components/_captions-hover-effect.scss */
 .cs-style-4 li {
   -webkit-perspective: 1700px;
   -moz-perspective: 1700px;
@@ -10075,26 +10078,26 @@ button:focus {
   perspective-origin: 0 50%;
 }
 
-/* line 83, ../scss/components/_captions-hover-effect.scss */
+/* line 87, ../scss/components/_captions-hover-effect.scss */
 .cs-style-4 figure {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-/* line 89, ../scss/components/_captions-hover-effect.scss */
+/* line 93, ../scss/components/_captions-hover-effect.scss */
 .cs-style-4 figure > div {
   overflow: hidden;
 }
 
-/* line 93, ../scss/components/_captions-hover-effect.scss */
+/* line 97, ../scss/components/_captions-hover-effect.scss */
 .cs-style-4 figure img {
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
 }
 
-/* line 99, ../scss/components/_captions-hover-effect.scss */
+/* line 103, ../scss/components/_captions-hover-effect.scss */
 .no-touch .cs-style-4 figure:hover img,
 .cs-style-4 figure.cs-hover img {
   -webkit-transform: translateX(25%);
@@ -10103,7 +10106,7 @@ button:focus {
   transform: translateX(25%);
 }
 
-/* line 107, ../scss/components/_captions-hover-effect.scss */
+/* line 111, ../scss/components/_captions-hover-effect.scss */
 .cs-style-4 figcaption {
   height: 100%;
   width: 50%;
@@ -10122,7 +10125,7 @@ button:focus {
   transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-/* line 125, ../scss/components/_captions-hover-effect.scss */
+/* line 129, ../scss/components/_captions-hover-effect.scss */
 .no-touch .cs-style-4 figure:hover figcaption,
 .cs-style-4 figure.cs-hover figcaption {
   opacity: 1;
@@ -10134,7 +10137,7 @@ button:focus {
   transition: transform 0.4s, opacity 0.1s;
 }
 
-/* line 136, ../scss/components/_captions-hover-effect.scss */
+/* line 140, ../scss/components/_captions-hover-effect.scss */
 .cs-style-4 figcaption a {
   position: absolute;
   bottom: 20px;

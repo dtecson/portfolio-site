@@ -55,12 +55,13 @@ var portfolioCards = [
 			"ideas_threat_matrix.jpg",
 			"whiteboard.jpg",
 			"workflow.jpg",
-			"wireframes.jpg"
+			"wireframes.jpg",
 			"ideas_chart.jpg",
-			"explorations_chart.jpg",
+			//"explorations_chart.jpg",
 			"explorations_screen.jpg",
 			"sensor_details.jpg",
 			"transitions.jpg",
+			"icons.jpg",
 			"SADA_hifi.jpg"
 
 		]
@@ -69,7 +70,7 @@ var portfolioCards = [
 		name:'Constituent Safety',
 		project:'patro/',
 		file:'patro.html',
-		img:'wireframe_idea_4_activate.jpg',
+		img:'main.jpg',
 		involvement:[
 			'Research', 'IA', 'Interaction', 'Visual'
 		],
@@ -77,68 +78,72 @@ var portfolioCards = [
 			'windows appication', 'touch enabled', 'geospatial', 'feature component'
 		],
 		portfolioImages:[
-			"wireframe_idea_4_activate.jpg",
-			"wireframe_idea_4_add_update.jpg",
-			"wireframe_idea_4_manage_incident.jpg",
-			"aoi_detail_ideas.jpg",
-			"icons_icons.jpg",
-			"active_incident_manage_user_visual_comp.jpg",
-			"current_workflow_simplified-01.jpg",
-			"current_workflow_simplified-02.jpg"
+			"workflows.jpg",
+			"wireframes.jpg",
+			"visual-active-incident.jpg",
+			"icons.jpg",
+			"ideas_aoi.jpg"
 		]
 	},
 	{
 		name:'Data Analytics',
 		project:'swivl/',
 		file:'swivl.html',
-		img:'SADA_hifi.jpg',
+		img:'main.jpg',
 		involvement:[
-			'Research', 'IA', 'Interaction', 'Visual'
+			'Research', 'IA', 'Interaction', 'Visual', 'Development'
 		],
 		categories:[
 			'web-based', 'big data'
 		],
 		portfolioImages:[
-			"whiteboard1.jpg",
-			"whiteboard2.jpg",
-			"whiteboard3.jpg",
-			"clickthrough_threat matrix.jpg"
+			"whiteboard.jpg",
+			"workflow.jpg",
+			"comps.jpg",
+			"visual1.jpg"
 		]
 	},
 	{
-		name:'Web-based Situational Awareness',
-		project:'replayweb/',
-		file:'replayweb.html',
-		img:'SADA_hifi.jpg',
+		name:'Business Development',
+		project:'bizdev/',
+		file:'bizdev.html',
+		img:'main.jpg',
 		involvement:[
-			'IA', 'Interaction'
+			'IA'
 		],
 		categories:[
-			'web-based'
+			'sales support'
 		],
 		portfolioImages:[
-			"whiteboard1.jpg",
-			"whiteboard2.jpg",
-			"whiteboard3.jpg",
-			"clickthrough_threat matrix.jpg"
+			"training_whiteboard.jpg",
+			"training_workflow1.jpg",
+			"training_workflow2.jpg",
+			"BEE_whiteboard.jpg",
+			"BEE_workflow1.jpg",
+			"BEE_workflow2.jpg",
+			"medical_workflow1.jpg",
+			"medical_workflow2.jpg",
 		]
 	},
 	{
 		name:'Presentation Tool',
 		project:'pathfinder/',
 		file:'pathfinder.html',
-		img:'SADA_hifi.jpg',
+		img:'main.jpg',
 		involvement:[
 			'Research', 'IA', 'Interaction'
 		],
 		categories:[
-			'web-based'
+			'touch enabled', 'presentation', 'task analysis'
 		],
 		portfolioImages:[
-			"whiteboard1.jpg",
-			"whiteboard2.jpg",
-			"whiteboard3.jpg",
-			"clickthrough_threat matrix.jpg"
+			"nodes_home.jpg",
+			"nodes_global.jpg",
+			"nodes_expanded.jpg",
+			"nodes_zoom.jpg",
+			"workflows.jpg",
+			"workflows2.jpg",
+			"data_entry.jpg"
 		]
 	}
 ]

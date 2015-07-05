@@ -1,21 +1,25 @@
-.grid figure {
+figure.card {
   margin: 0;
   position: relative;
-}
 
-.grid figure img {
-  max-width: 100%;
-  display: block;
-  position: relative;
+  img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+  }
 }
 
 .grid figcaption {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 20px 0;
   background: #2c3f52;
   color: $iron;
+
+  ul.involve-list{
+    margin: 0;
+  }
 }
 
 /* Caption Style 3 */
