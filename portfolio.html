@@ -3,8 +3,17 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Foundation</title>
+    <title>Dan Tecson | User Experience Designer/Developer</title>
+    <link href='http://fonts.googleapis.com/css?family=Antic|Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/foundation/css/normalize.min.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.5/slick.css"/>
+
+    <link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/lightbox/dist/css/lightbox.css"/>
+
     <link rel="stylesheet" href="css/app.css"/>
+    <link rel="icon" type="image/png" href="/images/ico.png"/>
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 <body>
@@ -13,7 +22,9 @@
         <div id="intro" class="large-12 columns text-center">
             <section>
                 <img src="images/logo.svg" width="150px" class="logo">
-                <div class="i-am">I am passionate about <span>experiences</span>.</div>
+
+                <div class="title"><span>UX</span> Designer / <span class="dev">Developer</span></div>
+                <div id="i-am"><h2>I am passionate about <span id="whoAmI">user experiences</span></h2></div>
             </section>
         </div>
     </div>
@@ -23,105 +34,98 @@
         <section id="my-process" class="large-12 columns text-justify">
             <section>
                 <h2>How do I approach things?</h2>
-            <p> The four essays which are here collected will be of interest to a wide circle of educated people, but
-                they can
-                only be thoroughly understood and judged by those who are really acquainted with psychoanalysis as such.
-                It is
-                hoped that they may serve as a bond between students of ethnology, philology, folklore and of the allied
-                sciences, and psychoanalysts; they cannot, however, supply both groups the entire requisites for such
-                co-operation. They will not furnish the former with sufficient insight into the new psychological
-                technique, nor
-                will the psychoanalysts acquire through them an adequate command over the material to be elaborated.
-                Both groups
-                will have to content themselves with whatever attention they can stimulate here and there and with the
-                hope that
-                frequent meetings between them will not remain unproductive for science.</p>
-                </section>
-        </div>
+
+                <p><strong>Process. You either love it or hate it.</strong> Most people cringe their nose at the thought
+                    of it. My philosophy is that while not every problem is the same, there are some basic tenants that
+                    I think you just can't skip.</p>
+
+                <div class="row">
+                    <div class="large-2 columns">
+
+                    </div>
+                    <div class="large-10 columns">
+                        <h3>Research</h3>
+                        <p>We've got to start somewhere. What is it we are needing to accomplish? Business goals? User
+                            goals? Just who are the users, exactly? What do we need to accomplish to be successful?
+                            Stakeholder and user interviews, personas, and current task analysis are just some of the
+                            tools I like to use. If we are wanting to create a great user experience, I think we need to
+                            talk to the user when ever possible. What is it they want? What frustrates them? After all,
+                            we're designing an experience for them, right? Before moving on, we should have a solid
+                            understanding of the user and their objectives.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-2 columns">
+
+
+                    </div>
+                    <div class="large-10 columns">
+                        <h3>Information Architecture</h3>
+                        <p>Understanding the user's mental models is key in creating a delightful user experience. The
+                            organization of the content can greatly influence how easily a user navigates your
+                            application. Card sorting exercises, taxonomies and high level workflow diagrams are great
+                            ways to understand how a user might expect to interact. I feel that defining the IA is a lot
+                            like playing with LEGOs. Before we can start to build something, we need to know what blocks
+                            we have available to build with.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-2 columns">
+
+
+                    </div>
+                    <div class="large-10 columns">
+                        <h3>Interaction Design</h3>
+                        <p>Now that we know what we need to build, who we are building it for and pieces we have to play
+                            with, we can start thinking about design. Let's take those high level workflow diagrams and
+                            start to break them down even further. Thanks to our great IA, we can start to visualize
+                            what goes where. We'll keep it to low fidelity wireframes first and iterate, iterate, and
+                            iterate. By avoiding discussions on visual aesthetics, we can ensure that discussions are
+                            focused on the interactions. By creating paper or click-through prototypes, we can discover
+                            usability issues before we even get to code.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-2 columns">
+
+
+                    </div>
+                    <div class="large-10 columns">
+                        <h3>Visual Design</h3>
+                        <p>Color, graphics, motion, and typography are just some of the many concepts that can have a
+                            huge impact on how a user interacts with the application. Visual design is key in guiding
+                            the user's path, invoking desired emotions, and influencing results. The wrong combination
+                            can send a user running for the hills, but combination can result in a delightful user
+                            experience.</p>
+                    </div>
+                </div>
+
+                <p>Throughout this entire process we should try and validate decision with users via user loops, to
+                    ensure we are headed in the right direction. There is a lot of overlap as we move from one step to
+                    the next. How long we spend in each concept is very dependant on the project.</p>
+            </section>
     </div>
+</div>
 </div>
 <div class="row full-width color-3">
     <div class="row">
         <div id="my-portfolio" class="large-12 columns">
             <section>
-            <div class="grid">
-                <h2>What have I done lately?</h2>
-                <ul class="small-block-grid-1 medium-block-grid-3 cs-style-3">
-                    <li class="grid__item" href="#" data-portfolio="testfile">
-                        <figure class="card">
-                            <div><img src="images/SADA_hifi.jpg" alt="img05"></div>
-                            <figcaption>
-                                <h4 class="title title--preview">Sensor Management</h4>
-                                <span class="category">Research|IA|Interaction|Visual</span>
-
-                                <div class="loader"></div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="grid__item" href="#" data-portfolio="testfile">
-                        <figure class="card">
-                            <figure class="card">
-                                <div><img src="images/SADA_hifi.jpg" alt="img05"></div>
-                                <figcaption>
-                                    <h4 class="title title--preview">Sensor Management</h4>
-                                    <span class="category">Research|IA|Interaction|Visual</span>
-
-                                    <div class="loader"></div>
-                                </figcaption>
-                            </figure>
-                    </li>
-                    <li class="grid__item" href="#" data-portfolio="testfile">
-                        <figure class="card">
-                            <div><img src="images/SADA_hifi.jpg" alt="img05"></div>
-                            <figcaption>
-                                <h4 class="title title--preview">Sensor Management</h4>
-                                <span class="category">Research|IA|Interaction|Visual</span>
-
-                                <div class="loader"></div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="grid__item" href="#" data-portfolio="testfile">
-                        <figure class="card">
-                            <div><img src="images/SADA_hifi.jpg" alt="img05"></div>
-                            <figcaption>
-                                <h4 class="title title--preview">Sensor Management</h4>
-                                <span class="category">Research|IA|Interaction|Visual</span>
-
-                                <div class="loader"></div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="grid__item" href="#" data-portfolio="testfile">
-                        <figure class="card">
-                            <div><img src="images/SADA_hifi.jpg" alt="img05"></div>
-                            <figcaption>
-                                <h4 class="title title--preview">Sensor Management</h4>
-                                <span class="category">Research|IA|Interaction|Visual</span>
-
-                                <div class="loader"></div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="grid__item" href="#" data-portfolio="testfile">
-                        <figure class="card">
-                            <div><img src="images/SADA_hifi.jpg" alt="img05"></div>
-                            <figcaption>
-                                <h4 class="title title--preview">Sensor Management</h4>
-                                <span class="category">Research|IA|Interaction|Visual</span>
-
-                                <div class="loader"></div>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-            <div class="content">
-                <div class="scroll-wrap">
-                    <article class="content__item"></article>
+                <div class="grid">
+                    <h2>What have I done lately?</h2>
+                    <p>Most of these projects required a collaborative effort from a team of project managers, developers and designers, with everyone contributing ideas. It was often my responsibility to take the collective ideas and synthesize the results, exploring different ideas when time allowed.</p>
+                    <ul id="portfolio-grid" class="small-block-grid-1 medium-block-grid-3 cs-style-3">
+                    </ul>
                 </div>
-                <button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
-            </div>
+                <div class="content">
+                    <div class="scroll-wrap">
+                        <article class="content__item"></article>
+                    </div>
+                    <button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
+                </div>
             </section>
         </div>
     </div>
@@ -130,19 +134,277 @@
     <div class="row">
         <div id="me" class="large-12 columns text-justify">
             <section>
-            <p> The four essays which are here collected will be of interest to a wide circle of educated people, but
-                they can
-                only be thoroughly understood and judged by those who are really acquainted with psychoanalysis as such.
-                It is
-                hoped that they may serve as a bond between students of ethnology, philology, folklore and of the allied
-                sciences, and psychoanalysts; they cannot, however, supply both groups the entire requisites for such
-                co-operation. They will not furnish the former with sufficient insight into the new psychological
-                technique, nor
-                will the psychoanalysts acquire through them an adequate command over the material to be elaborated.
-                Both groups
-                will have to content themselves with whatever attention they can stimulate here and there and with the
-                hope that
-                frequent meetings between them will not remain unproductive for science.</p>
+                <h2>Who am I?</h2>
+
+                <p>I am a UX designer/developer that can thrive equally well in both worlds. My knowledge and experience
+                    in both these disciplines has served me well, enabling me to contribute to most aspects of the
+                    development life cycle of a project. I have a strong passion in creating user focused experiences.
+                    From the brainstorming and requirements gathering, to rapid prototyping and production of hi
+                    fidelity assets, through the development and implementation phases of projects, I strive to create
+                    the best user experience possible.</p>
+
+                <div class="row small-collapse" data-equalizer>
+                    <h3>Resume</h3>
+
+                    <div class="large-8 columns text-justify" data-equalizer-watch>
+                        <div class="row work-item">
+                            <div class="row small-collapse">
+                                <div class="large-7 columns">
+                                    <h5>UX/UI Technical Lead
+                                        <small>Ringtail Design</small>
+                                    </h5>
+                                </div>
+                                <div class="large-5 columns large-text-right">
+                                    <div class="work-date">June 2014 - June 2015</div>
+                                </div>
+                            </div>
+
+                            <div class="summary">
+                                <p>Responsible for the UX across the company's products, which included:
+                                    monitoring, enforcing, training, and improving our own process to ensure that all
+                                    designs
+                                    were user-focused and met the company's high standards. Worked on desktop and
+                                    web-based
+                                    applications that had a focus on situational awareness and data visualization. Lead
+                                    small,
+                                    cross-functional teams throughout the company's hybrid Agile UX process, which
+                                    included:
+                                    user interviews, persona creation, information architecture and initial workflow
+                                    concepts.
+                                    Synthesised the collected information to iteratively create workflows, wireframes,
+                                    driving
+                                    the projects from interactive design through to visual design with high fidelity
+                                    mocks.</p>
+                            </div>
+                        </div>
+                        <div class="row work-item">
+                            <div class="row small-collapse">
+                                <div class="large-7 columns">
+                                    <h5>UX Developer
+                                        <small>Ringtail Design</small>
+                                    </h5>
+                                </div>
+                                <div class="large-5 columns large-text-right">
+                                    <div class="work-date">July 2013 - June 2014</div>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <p>Worked as one of the primary developers on the company's web based data
+                                    analytics platform. Heavily involved with porting existing application from a
+                                    knockout.js
+                                    based framework to durandal.js. This project also involved refactoring the
+                                    application to
+                                    utilize d3.js instead of highcharts.js. Was a major contributor to the information
+                                    architecture and interaction design.</p>
+                            </div>
+                        </div>
+                        <div class="row work-item">
+                            <div class="row small-collapse">
+                                <div class="large-7 columns">
+                                    <h5>Senior Client Side Developer
+                                        <small>National Instruments</small>
+                                    </h5>
+                                </div>
+                                <div class="large-5 columns large-text-right">
+                                    <div class="work-date">Sept 2011 - July 2013</div>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <p>Responsible for creating proof-of-concepts for implementing new
+                                    javascript programming techniques. Role required me to maintain horizontal
+                                    visibility across
+                                    all applications to look for opportunities to improve the client-side architecture
+                                    of the
+                                    web applications. Responsible for working with the business groups to review new
+                                    vendor
+                                    offerings that affected the client-side of web application. Previous work history
+                                    and skill
+                                    set led to an additional lead UX role, where I facilitated UX/UI discussions within
+                                    web
+                                    application teams that consist of project managers, business owners, designers and
+                                    developers.</p>
+                            </div>
+                        </div>
+                        <div class="row work-item">
+                            <div class="row small-collapse">
+                                <div class="large-7 columns">
+                                    <h5>Design Team Lead
+                                        <small>Keller Williams Realty International</small>
+                                    </h5>
+                                </div>
+                                <div class="large-5 columns large-text-right">
+                                    <div class="work-date">Jan 2004 - Aug 2012</div>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <p>Oversaw the look and feel of all IT initiatives to ensure consistency
+                                    with Keller Williams branding. Managed the design team by prioritizing and
+                                    delegating
+                                    projects and tasks, as well as all HR duties. Mentored the design team on best
+                                    practices
+                                    concerning web/UX/RIA design and architecture. Established design frameworks for
+                                    company
+                                    enterprise systems. Facilitated communication with developers, project managers and
+                                    business
+                                    owners to ensure project needs are met. Looked for opportunities to integrate new
+                                    techniques
+                                    and technology.</p>
+                            </div>
+                        </div>
+                        <div class="row work-item">
+                            <div class="row small-collapse">
+                                <div class="large-7 columns">
+                                    <h5>Consultant
+                                        <small>HurricaneGOLF</small>
+                                    </h5>
+                                </div>
+                                <div class="large-5 columns large-text-right">
+                                    <div class="work-date">July 2003 - Jan 2004</div>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <p>Designed and developed the company’s website with full content
+                                    management capabilities. Created all the print and web marketing collateral.
+                                    Developed
+                                    websites for company’s clients. Developed e-commerce/registration/reporting
+                                    web-based
+                                    application to manage client golf tournaments. Developed content management tools
+                                    for
+                                    various client sites.</p>
+                            </div>
+                        </div>
+                        <div class="row work-item">
+                            <div class="row small-collapse">
+                                <div class="large-7 columns">
+                                    <h5>Multimedia Designer
+                                        <small>HBMG, Inc.</small>
+                                    </h5>
+                                </div>
+                                <div class="large-5 columns large-text-right">
+                                    <div class="work-date">July 2002 - July 2003</div>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <p>Designed websites, multimedia applications and print materials for
+                                    company’s clients. Flash development lead for e-Learning project. Lead developer an
+                                    online
+                                    audio/visual conference application utilizing Macromedia Flash Communication Server.
+                                    Lead UI
+                                    designer for flagship product.</p>
+                            </div>
+                        </div>
+                        <div class="row work-item">
+                            <div class="row small-collapse">
+                                <div class="large-7 columns la">
+                                    <h5>Web Designer
+                                        <small>First USA</small>
+                                    </h5>
+                                </div>
+                                <div class="large-5 columns large-text-right">
+                                    <div class="work-date">Aug 2000 - Jan 2002</div>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <p>Creative lead in designing all components of the Intranet used by
+                                    advisors. Designed all graphics necessary for Intranet. Found ways to improve
+                                    usability of
+                                    the Intranet. Determined and implemented optimal file structure for Intranet.
+                                    Participated
+                                    in entire life cycle projects, from requirements gathering and focus groups, to
+                                    testing and
+                                    implementation. Occupied a major role in developing the functionality/usability of
+                                    the
+                                    content management tool. Aided in the design of the GUI for a content management
+                                    tool.
+                                    Provided ongoing training and tech support to remote authors/editors. Responsible
+                                    for
+                                    ongoing maintenance of the Intranet. Found ways to optimize and streamline both the
+                                    Intranet
+                                    and the process of putting content on the Intranet.</p>
+                            </div>
+                        </div>
+                    </div >
+                    <div id="experience-meta" class="large-4 columns" data-equalizer-watch>
+                        <div class="gutter-left">
+                            <div class="certs">
+                                <h5>Certification</h5>
+                                <ul>
+                                    <li>Akendi Certified User Experience Designer (CXD&trade;)</li>
+                                </ul>
+                            </div>
+                            <div class="skills-list">
+                                <h5>Skills</h5>
+                                <ul class="design">
+                                    <li><h6>UX/UI Design</h6>
+                                        <ul>
+                                            <li>User research/Personas</li>
+                                            <li>Information architecture</li>
+                                            <li>User sessions</li>
+                                            <li>Interaction design</li>
+                                            <li>Visual design</li>
+                                            <li>Wireframes</li>
+                                            <li>User workflows</li>
+                                            <li>Usability testing</li>
+                                            <li>Design pattern libraries</li>
+                                            <li>Style guides</li>
+                                            <li>Lean UX</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skills-list">
+                                <ul class="development">
+                                    <li><h6>Client Side Development</h6>
+                                        <ul>
+                                            <li>Javascript</li>
+                                            <li>Actionscript 2,3</li>
+                                            <li>Responsive design</li>
+                                            <li>OOP</li>
+                                            <li>HTML 4,5</li>
+                                            <li>CSS 2,3</li>
+                                            <li>SASS</li>
+                                            <li>jQuery</li>
+                                            <li>Zurb Foundation</li>
+                                            <li>Durandal</li>
+                                            <li>RequireJS</li>
+                                            <li>KnockoutJS</li>
+                                            <li>D3JS</li>
+                                            <li>Drupal</li>
+                                            <li>Agile scrum methodologies</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="edu">
+                                <h5>Education</h5>
+                                <ul>
+                                    <li>User Experience Design
+                                        <ul>
+                                            <li>
+                                                Akendi UX Training
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Interaction Design
+                                        <ul>
+                                            <li>
+                                                Cooper U
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>Bachelors of Science, Advertising
+                                        <ul>
+                                            <li>
+                                                The University of Texas at Austin
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </div>
@@ -151,19 +413,28 @@
     <div class="row">
         <div id="my-contact-info" class="large-12 columns">
             <section>
-            <p> The four essays which are here collected will be of interest to a wide circle of educated people, but
-                they can
-                only be thoroughly understood and judged by those who are really acquainted with psychoanalysis as such.
-                It is
-                hoped that they may serve as a bond between students of ethnology, philology, folklore and of the allied
-                sciences, and psychoanalysts; they cannot, however, supply both groups the entire requisites for such
-                co-operation. They will not furnish the former with sufficient insight into the new psychological
-                technique, nor
-                will the psychoanalysts acquire through them an adequate command over the material to be elaborated.
-                Both groups
-                will have to content themselves with whatever attention they can stimulate here and there and with the
-                hope that
-                frequent meetings between them will not remain unproductive for science.</p>
+                <h2>Wanna chat?</h2>
+
+                <p>Thanks for stopping by and checking out my space! Feel free to contact if you want to know anything
+                    more. We can 'talk shop' or chat about anything else. </p>
+
+                <div class="row">
+                    <div class="large-9 columns">
+                        <div class="quote">
+                            <blockquote>
+                                "You cannot NOT have a user experience" <cite>Lou Carbone</cite>
+                            </blockquote>
+                            <blockquote style="diplay:none">
+                                "Design is where science and art break even" <cite>Robin Matthew</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="large-3 columns small-text-center large-text-right">
+                        <div class="contact"><a href="https://www.linkedin.com/in/dantecson"><img
+                                src="images/linkedin.svg"></a></div>
+                    </div>
+                </div>
+
             </section>
         </div>
     </div>
@@ -172,8 +443,12 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/foundation/js/foundation.min.js"></script>
 <script src="js/vendors/animatedGrid/classie.js"></script>
-<script src="js/vendors/animatedGrid/main.js"></script>
 <script src="js/vendors/captionHover/toucheffects.js"></script>
+<script type="text/javascript" src="bower_components/lightbox/dist/js/lightbox.min.js"></script>
+<script type="text/javascript" src="bower_components/slick.js/slick/slick.min.js"></script>
+<script src="bower_components/readmore/readmore.min.js"></script>
+<script src="js/portfolioData.js"></script>
 <script src="js/app.js"></script>
+<script src="js/vendors/animatedGrid/main.js"></script>
 </body>
 </html>

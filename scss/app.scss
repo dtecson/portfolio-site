@@ -1,8 +1,12 @@
-@import "settings";
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "foundation";
-@import "animated-grid";
-@import "captions-hover-effect";
-@import "app-style";
+@import "foundation/settings";
+@import "components/colors";
+@import "components/animated-grid";
+@import "components/captions-hover-effect";
+@import "components/portfolio-carousel";
+@import "components/portfolio-pages";
+@import "components/app-style";
 
 // Or selectively include components
 // @import

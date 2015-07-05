@@ -1,0 +1,16 @@
+#portfolio-content{
+
+  .portfolio-meta{
+    h4{
+      line-height: 1rem;
+    }
+    ul{
+      @include inline-list;
+
+      li{
+        font-size: .8rem;
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+}

@@ -1,11 +1,14 @@
+@import "foundation";
+@import "foundation/settings";
+
 .color-1{
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#48555b+0,002735+100 */
   background: #48555b; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #48555b 0%, #002735 100%); /* FF3.6+ */
+  background: -moz-radial-gradient(center, ellipse cover, #48555b 0%, #002735 100%); /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#48555b), color-stop(100%,#002735)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #48555b 0%,#002735 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #48555b 0%,#002735 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #48555b 0%,#002735 100%); /* IE10+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #48555b 0%,#002735 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #48555b 0%,#002735 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #48555b 0%,#002735 100%); /* IE10+ */
   background: radial-gradient(ellipse at center,  #48555b 0%,#002735 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48555b', endColorstr='#002735',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
@@ -32,62 +35,56 @@
     margin-left: auto;
     margin-right: auto;
     max-width: initial;
+    height: 100%;
+    min-height: 300px;
   }
 
   .row{
     margin: 0 auto;
     max-width: $row-width;
+    height: 100%;
   }
 }
 
 #intro{
   color: $white;
 
-  section{
-    padding: 175px 0 175px 0;
+  height: 100%;
+
+  h2{
+    color:$white;
   }
 
-  .i-am{
-    font-size: 3em;
+  section{
+    //padding: 205px 0 145px 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 0 30px 0;
+  }
 
+  .title{
+    span{
+      color:#EB2424;
+
+      &.dev{
+        color: $base;
+      }
+    }
+  }
+
+  #i-am{
+    font-size: 2em;
+    margin: 0 0 20px 0;
     span{
       color:#EB2424;
     }
   }
-}
 
-#my-process{
-  h2{
-    color: #D1DBBE;
-  }
-  section{
-    padding: 50px 0;
-  }
-}
-
-#my-portfolio{
-  section{
-    padding: 50px 0;
-  }
-
-  li.grid__item{
-    padding: 2px;
-  }
-  .card{
-    background-color: $steel;
-    padding: 0px;
-    min-height: 120px;
-  }
-}
-
-#me{
-  section{
-    padding: 50px 0;
-  }
-}
-
-#my-contact-info{
-  section{
-    padding: 50px 0;
+  .contact{
+    img{
+      width: 35px;
+      height: 35px;
+    }
   }
 }

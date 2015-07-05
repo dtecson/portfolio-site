@@ -1,0 +1,22 @@
+h2.portolio-detail-name{
+  line-height: 1;
+}
+
+.portfolio-detail-carousel{
+  border: 1px solid #cccccc;
+  background-color: #f0f0f0;
+}
+
+.slick-prev{
+  left:15px;
+  &:before {
+    color: #000;
+  }
+}
+
+.slick-next{
+  right: 15px;
+  &:before {
+    color: #000;
+  }
+}
