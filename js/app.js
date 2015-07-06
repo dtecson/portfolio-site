@@ -72,9 +72,66 @@ $(document)
 			lessLink: '<a href="#">close</a>'
 		});
 
+		$('.back-to-top').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 500);
+			//$("html, body").scrollTop(0); //For without animation
+			return false;
+		});
+
+		$('#i-am').waypoint({
+			handler: function(direction) {
+				if(direction==="down"){
+					$(".footer").addClass("stuck");
+				}else{
+					$(".footer").removeClass("stuck");
+				}
+			},
+			offset:0
+		});
+
+		$('#submitFormButton').click(function(e){
+			$('#contact-form').submit();
+		})
+
+		$('#contact-form').on('valid.fndtn.abide', function(e){
+			e.preventDefault();
+			if(e.namespace!=="") {
+				sendMail();
+			}
+
+		});
+
+		function sendMail() {
+			var email = $('#email').val();
+			var comments = $('#comments').val();
+
+			$.ajax({
+				type: "POST",
+				url: "https://mandrillapp.com/api/1.0/messages/send.json",
+				data: {
+					'key': '2TM0Ddoa1G8Z9Z4Y1k__Iw',
+					'message': {
+						'from_email': email,
+						'to': [
+							{
+								'email': 'dantecson@gmail.com',
+								'name': 'Dan Tecson',
+								'type': 'to'
+							}
+						],
+						'subject': 'Portfolio Interest',
+						'html': comments
+					}
+				},
+				success: function (result) {
+					$('#modalTitle').html('Thanks for sending me a message!');
+					$('#contact').remove();
+					$('#thankyou').removeClass('hide');
+				}
+			});
+		};
+
 		loop(delay);
-
 		loadPortfolioCards('#portfolio-grid', portfolioCards);
-
-
+		window.sr = new scrollReveal();
 	});

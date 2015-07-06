@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 /* Mixin */
 @mixin vertical-align {
   position: relative;
@@ -66,7 +70,7 @@ h1, h2, h3, h4, h5 {
   }
 
   section {
-    padding: 175px 0 175px 0;
+    padding: 175px 0 250px 0;
   }
 
   #i-am {
@@ -261,20 +265,9 @@ h1, h2, h3, h4, h5 {
     color: #D1DBBE;
   }
   section {
-    padding: 50px 0;
+    padding: 50px 0 75px 0;
   }
 
-  .contact {
-    height: 200px;
-    a{
-      @include vertical-align;
-    }
-    img {
-      height: 70px;
-      position: relative;
-      top: -50px;
-    }
-  }
   .quote {
     height: 200px;
     blockquote {
@@ -285,6 +278,53 @@ h1, h2, h3, h4, h5 {
       cite {
         color: $snow;
       }
+    }
+  }
+}
+
+footer{
+  padding: 10px;
+  background-color: $jet;
+  width: 100%;
+
+  img {
+    height: 50px;
+  }
+
+  .back-to-top{
+    cursor: pointer;
+  }
+
+  .contact {
+     img{
+       padding: 10px;
+    }
+  }
+
+
+  @media #{$small-only} {
+    padding: 5px;
+    img {
+      height: 25px;
+    }
+
+    .contact {
+      img {
+        padding: 0 0 0 5px;
+      }
+    }
+  }
+
+  &.footer {
+    position:fixed;
+    @include translate2d(0, 0);
+    bottom:-70px;
+    @include transition-property(transform);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in);
+    &.stuck {
+      @include translate2d(0, -70px);
+      z-index: 900;
     }
   }
 }
