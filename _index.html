@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dan Tecson | User Experience Designer/Developer</title>
+    <link rel="stylesheet" href="css/placeholder.css"/>
+    <link rel="stylesheet" href="bower_components/foundation/css/normalize.min.css"/>
+    <link rel="icon" type="image/png" href="/images/ico.png"/>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+<div class="row full-width color-1">
+    <div class="row">
+        <div id="intro" class="large-12 columns text-center">
+            <section>
+                <img src="images/logo.svg" width="150px" class="logo">
+
+                <div class="title"><span>UX</span> Designer / <span class="dev">Developer</span></div>
+                <div id="i-am"><h2>I am passionate about <span id="whoAmI">user experiences</span></h2></div>
+                <div class="coming-soon">Portfolio coming soon.</div>
+                <div class="contact"><a href="https://www.linkedin.com/in/dantecson"><img src="images/linkedin.svg"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/vendors/animatedGrid/classie.js"></script>
+<script src="js/vendors/captionHover/toucheffects.js"></script>
+<script type="text/javascript" src="bower_components/lightbox/dist/js/lightbox.min.js"></script>
+<script type="text/javascript" src="bower_components/slick.js/slick/slick.min.js"></script>
+<script src="bower_components/readmore/readmore.min.js"></script>
+<script src="js/portfolioData.js"></script>
+<script>
+    $(document)
+            .foundation()
+            .ready(function() {
+                $who = $('#i-am'),
+                        $text = $('#whoAmI'),
+                        delay = 8; //seconds
+
+                function loop(delay) {
+                    $.each(whoIam, function (i, elm) {
+                        $who.delay(delay * 1E3).fadeOut();
+                        $who.queue(function () {
+                            $text.html(whoIam[i]);
+                            $who.dequeue();
+                        });
+                        $who.fadeIn();
+                        $who.queue(function () {
+                            if (i == whoIam.length - 1) {
+                                loop(delay);
+                            }
+                            $who.dequeue();
+                        });
+                    });
+                }
+
+                loop(delay);
+            });
+</script>
+</body>
+</html>
