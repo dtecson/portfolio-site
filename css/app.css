@@ -9741,7 +9741,7 @@ th.hide-for-touch {
   transform-origin: 0 0;
 }
 
-/* line 284, ../scss/components/_animated-grid.scss */
+/* line 288, ../scss/components/_animated-grid.scss */
 .placeholder.placeholder--trans-in {
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -9749,14 +9749,14 @@ th.hide-for-touch {
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* line 291, ../scss/components/_animated-grid.scss */
+/* line 295, ../scss/components/_animated-grid.scss */
 .placeholder.placeholder--trans-out {
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 
 /* main content */
-/* line 297, ../scss/components/_animated-grid.scss */
+/* line 301, ../scss/components/_animated-grid.scss */
 .content {
   position: absolute;
   top: 0;
@@ -9770,7 +9770,7 @@ th.hide-for-touch {
   overflow: hidden;
 }
 
-/* line 310, ../scss/components/_animated-grid.scss */
+/* line 314, ../scss/components/_animated-grid.scss */
 .content.content--show {
   height: 100vh;
   pointer-events: auto;
@@ -9778,7 +9778,7 @@ th.hide-for-touch {
 }
 
 /* scroll helper wrap */
-/* line 317, ../scss/components/_animated-grid.scss */
+/* line 325, ../scss/components/_animated-grid.scss */
 .scroll-wrap {
   position: absolute;
   width: 100%;
@@ -9791,7 +9791,7 @@ th.hide-for-touch {
 }
 
 /* single content item */
-/* line 329, ../scss/components/_animated-grid.scss */
+/* line 337, ../scss/components/_animated-grid.scss */
 .content__item {
   position: absolute;
   top: 0;
@@ -9804,14 +9804,14 @@ th.hide-for-touch {
   font-size: 0.85em;
 }
 
-/* line 340, ../scss/components/_animated-grid.scss */
+/* line 348, ../scss/components/_animated-grid.scss */
 .content__item p {
   max-width: 1200px;
   margin: 0 auto 1em auto;
   text-align: justify;
 }
 
-/* line 346, ../scss/components/_animated-grid.scss */
+/* line 354, ../scss/components/_animated-grid.scss */
 .content__item.content__item--show {
   height: auto;
   min-height: 100vh;
@@ -9822,14 +9822,14 @@ th.hide-for-touch {
 }
 
 /* content elements */
-/* line 356, ../scss/components/_animated-grid.scss */
+/* line 364, ../scss/components/_animated-grid.scss */
 .category--full {
   font-size: 1.25em;
   margin-bottom: 20px;
   color: #81c483;
 }
 
-/* line 362, ../scss/components/_animated-grid.scss */
+/* line 370, ../scss/components/_animated-grid.scss */
 .category--full,
 .title--full,
 .meta--full .meta__author,
@@ -9838,19 +9838,19 @@ th.hide-for-touch {
   opacity: 0;
 }
 
-/* line 370, ../scss/components/_animated-grid.scss */
+/* line 378, ../scss/components/_animated-grid.scss */
 .content__item p {
   opacity: 0;
 }
 
-/* line 374, ../scss/components/_animated-grid.scss */
+/* line 382, ../scss/components/_animated-grid.scss */
 .category--full,
 .title--full {
   -webkit-transform: translate3d(0, 40px, 0);
   transform: translate3d(0, 40px, 0);
 }
 
-/* line 380, ../scss/components/_animated-grid.scss */
+/* line 388, ../scss/components/_animated-grid.scss */
 .meta--full .meta__author,
 .meta--full .meta__date,
 .meta--full .meta__reading-time {
@@ -9858,7 +9858,7 @@ th.hide-for-touch {
   transform: scale3d(0.5, 0.5, 1);
 }
 
-/* line 387, ../scss/components/_animated-grid.scss */
+/* line 395, ../scss/components/_animated-grid.scss */
 .content__item--show .category--full,
 .content__item--show .title--full,
 .content__item--show .meta--full .meta__author,
@@ -9873,32 +9873,32 @@ th.hide-for-touch {
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-/* line 401, ../scss/components/_animated-grid.scss */
+/* line 409, ../scss/components/_animated-grid.scss */
 .content__item--show .category--full,
 .content__item--show .title--full {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 
-/* line 407, ../scss/components/_animated-grid.scss */
+/* line 415, ../scss/components/_animated-grid.scss */
 .content__item--show .title--full {
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
 }
 
-/* line 413, ../scss/components/_animated-grid.scss */
+/* line 421, ../scss/components/_animated-grid.scss */
 .content__item--show .meta--full .meta__date {
   -webkit-transition-delay: 0.27s;
   transition-delay: 0.27s;
 }
 
-/* line 418, ../scss/components/_animated-grid.scss */
+/* line 426, ../scss/components/_animated-grid.scss */
 .content__item--show .meta--full .meta__reading-time {
   -webkit-transition-delay: 0.34s;
   transition-delay: 0.34s;
 }
 
-/* line 423, ../scss/components/_animated-grid.scss */
+/* line 431, ../scss/components/_animated-grid.scss */
 .content__item--show.content__item p {
   opacity: 1;
   -webkit-transition: opacity 0.5s 0.25s;
@@ -9906,7 +9906,7 @@ th.hide-for-touch {
 }
 
 /* close button (for content and sidebar) */
-/* line 430, ../scss/components/_animated-grid.scss */
+/* line 438, ../scss/components/_animated-grid.scss */
 .close-button {
   position: absolute;
   border: none;
@@ -9931,35 +9931,35 @@ th.hide-for-touch {
   transition: opacity 0.3s;
 }
 
-/* line 454, ../scss/components/_animated-grid.scss */
+/* line 462, ../scss/components/_animated-grid.scss */
 .close-button span {
   display: none;
 }
 
-/* line 458, ../scss/components/_animated-grid.scss */
+/* line 466, ../scss/components/_animated-grid.scss */
 .close-button:hover {
   color: #7b7b7b;
   background-color: transparent;
 }
 
 /* show class for content close button */
-/* line 464, ../scss/components/_animated-grid.scss */
+/* line 472, ../scss/components/_animated-grid.scss */
 .close-button--show {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* line 469, ../scss/components/_animated-grid.scss */
+/* line 477, ../scss/components/_animated-grid.scss */
 .category ul li {
   font-size: .8em;
   color: #AAAAAA;
   display: inline;
 }
-/* line 473, ../scss/components/_animated-grid.scss */
+/* line 481, ../scss/components/_animated-grid.scss */
 .category ul li:after {
   content: " | ";
 }
-/* line 477, ../scss/components/_animated-grid.scss */
+/* line 485, ../scss/components/_animated-grid.scss */
 .category ul li:last-child:after {
   content: " ";
 }
@@ -10195,270 +10195,283 @@ h2.portolio-detail-name {
   margin: 0 1rem 0 0;
 }
 
-/* line 1, ../scss/components/_app-style.scss */
+/* Mixin */
+/* line 44, ../scss/components/_app-style.scss */
 body {
   overflow-x: hidden;
 }
 
-/* Mixin */
-/* line 14, ../scss/components/_app-style.scss */
+/* line 49, ../scss/components/_app-style.scss */
 .color-1 {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#48555b+0,002735+100 */
   background: #48555b;
   /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #48555b 0%, #002735 100%);
+  background: -moz-radial-gradient(center, ellipse cover, #48555b 0%, #002735 60%);
   /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #48555b), color-stop(100%, #002735));
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #48555b), color-stop(60%, #002735));
   /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, #48555b 0%, #002735 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #48555b 0%, #002735 60%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, #48555b 0%, #002735 100%);
+  background: -o-radial-gradient(center, ellipse cover, #48555b 0%, #002735 60%);
   /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #48555b 0%, #002735 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #48555b 0%, #002735 60%);
   /* IE10+ */
-  background: radial-gradient(ellipse at center, #48555b 0%, #002735 100%);
+  background: radial-gradient(ellipse at center, #48555b 0%, #002735 60%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48555b', endColorstr='#002735', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color1', endColorstr='$color2', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
   color: #FFFFFF;
 }
 
-/* line 28, ../scss/components/_app-style.scss */
+/* line 54, ../scss/components/_app-style.scss */
 h1, h2, h3, h4, h5 {
   font-family: 'Antic';
 }
 
-/* line 32, ../scss/components/_app-style.scss */
+/* line 58, ../scss/components/_app-style.scss */
 .color-2 {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#446777+0,32505d+100 */
   background: #446777;
   /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0Njc3NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMjUwNWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top, #446777 0%, #32505d 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #446777), color-stop(100%, #32505d));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #446777 0%, #32505d 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #446777 0%, #32505d 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #446777 0%, #32505d 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #446777 0%, #32505d 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#446777', endColorstr='#32505d',GradientType=0 );
-  /* IE6-8 */
+  background-color: #446777;
+  background-image: -webkit-linear-gradient(#446777, #32505d);
+  background-image: linear-gradient(#446777, #32505d);
 }
 
-/* line 48, ../scss/components/_app-style.scss */
+/* line 63, ../scss/components/_app-style.scss */
 .color-3 {
   background-color: #90A99C;
 }
 
-/* line 52, ../scss/components/_app-style.scss */
+/* line 67, ../scss/components/_app-style.scss */
 .color-4 {
   color: #666666;
   background-color: #D1DBBE;
 }
 
-/* line 58, ../scss/components/_app-style.scss */
+/* line 73, ../scss/components/_app-style.scss */
 .row.full-width {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: initial;
+  max-width: 100%;
 }
-/* line 65, ../scss/components/_app-style.scss */
+/* line 80, ../scss/components/_app-style.scss */
 .row .row {
   margin: 0 auto;
   max-width: 62.5rem;
 }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 71, ../scss/components/_app-style.scss */
+  /* line 86, ../scss/components/_app-style.scss */
   .gutter-left {
     margin: 0 0 0 20px;
   }
 }
 
-/* line 77, ../scss/components/_app-style.scss */
+/* line 92, ../scss/components/_app-style.scss */
 #intro {
   color: #FFFFFF;
 }
-/* line 80, ../scss/components/_app-style.scss */
+/* line 95, ../scss/components/_app-style.scss */
 #intro h2 {
   color: #FFFFFF;
 }
-/* line 84, ../scss/components/_app-style.scss */
+/* line 99, ../scss/components/_app-style.scss */
 #intro section {
   padding: 175px 0 250px 0;
 }
-/* line 88, ../scss/components/_app-style.scss */
+/* line 103, ../scss/components/_app-style.scss */
 #intro #i-am {
   font-size: 2.5em;
   height: 80px;
 }
-/* line 92, ../scss/components/_app-style.scss */
+/* line 107, ../scss/components/_app-style.scss */
 #intro #i-am span {
   color: #EB2424;
 }
-/* line 97, ../scss/components/_app-style.scss */
+/* line 112, ../scss/components/_app-style.scss */
 #intro .title {
   font-size: .9rem;
 }
-/* line 99, ../scss/components/_app-style.scss */
+/* line 114, ../scss/components/_app-style.scss */
 #intro .title span {
   color: #EB2424;
 }
-/* line 102, ../scss/components/_app-style.scss */
+/* line 117, ../scss/components/_app-style.scss */
 #intro .title span.dev {
   color: #AAAAAA;
 }
 
-/* line 109, ../scss/components/_app-style.scss */
+/* line 124, ../scss/components/_app-style.scss */
 #my-process {
   color: #CCCCCC;
 }
-/* line 113, ../scss/components/_app-style.scss */
+/* line 125, ../scss/components/_app-style.scss */
+#my-process .notch {
+  width: 0;
+  height: 0;
+  padding: 0 0 5px 0;
+  border-style: solid;
+  border-width: 20px 40px 0 40px;
+  border-color: #002735 transparent transparent transparent;
+}
+/* line 131, ../scss/components/_app-style.scss */
 #my-process h2 {
   color: #D1DBBE;
 }
-/* line 117, ../scss/components/_app-style.scss */
+/* line 135, ../scss/components/_app-style.scss */
 #my-process h3 {
   color: #D1DBBE;
 }
-/* line 121, ../scss/components/_app-style.scss */
+/* line 139, ../scss/components/_app-style.scss */
 #my-process section {
-  padding: 50px 0;
+  padding: 20px 0;
 }
-/* line 124, ../scss/components/_app-style.scss */
-#my-process .row {
-  padding: 20px 0 40px 0;
+/* line 143, ../scss/components/_app-style.scss */
+#my-process .sub-section {
+  padding: 20px 0;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 130, ../scss/components/_app-style.scss */
+  /* line 149, ../scss/components/_app-style.scss */
   #my-process .collapse img {
     padding: 0 20px 0 0;
   }
-  /* line 135, ../scss/components/_app-style.scss */
+  /* line 154, ../scss/components/_app-style.scss */
   #my-process .collapse .swapped img {
     padding: 0 0 0 20px;
   }
 }
 
-/* line 145, ../scss/components/_app-style.scss */
-#my-portfolio section {
-  padding: 50px 0;
+/* line 164, ../scss/components/_app-style.scss */
+#my-portfolio .notch {
+  width: 0;
+  height: 0;
+  padding: 0 0 5px 0;
+  border-style: solid;
+  border-width: 20px 40px 0 40px;
+  border-color: #32505d transparent transparent transparent;
 }
-/* line 149, ../scss/components/_app-style.scss */
+/* line 168, ../scss/components/_app-style.scss */
 #my-portfolio li.grid__item {
   padding: 2px;
 }
-/* line 152, ../scss/components/_app-style.scss */
+/* line 172, ../scss/components/_app-style.scss */
+#my-portfolio .sub-section {
+  padding: 20px 0;
+}
+/* line 176, ../scss/components/_app-style.scss */
 #my-portfolio .card {
   background-color: #666666;
   padding: 0px;
   min-height: 100px;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 160, ../scss/components/_app-style.scss */
+  /* line 184, ../scss/components/_app-style.scss */
   #my-portfolio .collapse img {
     padding: 0 20px 0 0;
   }
-  /* line 165, ../scss/components/_app-style.scss */
+  /* line 189, ../scss/components/_app-style.scss */
   #my-portfolio .collapse .swapped img {
     padding: 0 0 0 20px;
   }
 }
 
+/* line 198, ../scss/components/_app-style.scss */
+#me .notch {
+  width: 0;
+  height: 0;
+  padding: 0 0 5px 0;
+  border-style: solid;
+  border-width: 20px 40px 0 40px;
+  border-color: #90A99C transparent transparent transparent;
+}
 @media only screen and (min-width: 40.0625em) {
-  /* line 176, ../scss/components/_app-style.scss */
+  /* line 204, ../scss/components/_app-style.scss */
   #me .collapse img {
     padding: 0 20px 0 0;
   }
-  /* line 181, ../scss/components/_app-style.scss */
+  /* line 209, ../scss/components/_app-style.scss */
   #me .collapse .swapped img {
     padding: 0 0 0 20px;
   }
 }
-/* line 187, ../scss/components/_app-style.scss */
-#me section {
-  padding: 50px 0;
+/* line 216, ../scss/components/_app-style.scss */
+#me .sub-section {
+  padding: 20px 0;
 }
-/* line 191, ../scss/components/_app-style.scss */
+/* line 220, ../scss/components/_app-style.scss */
 #me h5 {
   margin-bottom: 0;
   font-weight: 600;
   color: #3F6170;
 }
-/* line 195, ../scss/components/_app-style.scss */
+/* line 224, ../scss/components/_app-style.scss */
 #me h5 small {
   font-size: .8rem;
   margin-bottom: 0;
 }
-/* line 201, ../scss/components/_app-style.scss */
+/* line 230, ../scss/components/_app-style.scss */
 #me .work-item {
   padding: 0 0 10px 0;
 }
-/* line 205, ../scss/components/_app-style.scss */
+/* line 234, ../scss/components/_app-style.scss */
 #me .summary p {
   font-size: .9rem;
   margin: 0;
   padding: 0;
 }
-/* line 211, ../scss/components/_app-style.scss */
+/* line 240, ../scss/components/_app-style.scss */
 #me .work-date {
   font-size: .7rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 211, ../scss/components/_app-style.scss */
+  /* line 240, ../scss/components/_app-style.scss */
   #me .work-date {
     padding: .5rem 0 0 0;
   }
 }
-/* line 220, ../scss/components/_app-style.scss */
+/* line 249, ../scss/components/_app-style.scss */
 #me .resume-icon a {
   color: #666666;
 }
-/* line 223, ../scss/components/_app-style.scss */
+/* line 252, ../scss/components/_app-style.scss */
 #me .resume-icon a:hover, #me .resume-icon a:focus {
   color: #EB2424;
 }
-/* line 232, ../scss/components/_app-style.scss */
+/* line 261, ../scss/components/_app-style.scss */
 #me #experience-meta .gutter-left {
   height: 100%;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 232, ../scss/components/_app-style.scss */
+  /* line 261, ../scss/components/_app-style.scss */
   #me #experience-meta .gutter-left {
     padding: 0 0 0 20px;
     border-left: 1px solid #AAAAAA;
   }
 }
-/* line 240, ../scss/components/_app-style.scss */
+/* line 269, ../scss/components/_app-style.scss */
 #me #experience-meta h5 {
   color: black;
 }
-/* line 243, ../scss/components/_app-style.scss */
+/* line 272, ../scss/components/_app-style.scss */
 #me #experience-meta div {
   padding: 0 0 10px 0;
 }
-/* line 246, ../scss/components/_app-style.scss */
+/* line 275, ../scss/components/_app-style.scss */
 #me #experience-meta h6 {
   margin-bottom: 0;
   font-size: .8rem;
   font-weight: 600;
   color: #3F6170;
 }
-/* line 252, ../scss/components/_app-style.scss */
+/* line 281, ../scss/components/_app-style.scss */
 #me #experience-meta ul {
   list-style: none;
   margin: 0;
   padding: 0;
   font-size: .9rem;
 }
-/* line 260, ../scss/components/_app-style.scss */
+/* line 289, ../scss/components/_app-style.scss */
 #me #experience-meta .skills-list ul li ul {
   font-size: .75rem;
   list-style: none;
@@ -10481,48 +10494,61 @@ h1, h2, h3, h4, h5 {
 #me #experience-meta .skills-list ul li ul > li > * {
   display: block;
 }
-/* line 266, ../scss/components/_app-style.scss */
+/* line 295, ../scss/components/_app-style.scss */
 #me #experience-meta .skills-list ul li ul li {
   margin: 0 .5rem 0 0;
 }
-/* line 272, ../scss/components/_app-style.scss */
+/* line 301, ../scss/components/_app-style.scss */
 #me #experience-meta .edu li {
   margin: 0 0 .4rem;
 }
-/* line 276, ../scss/components/_app-style.scss */
+/* line 305, ../scss/components/_app-style.scss */
 #me #experience-meta .edu li ul {
   margin: 0 0 0 .5rem;
   font-size: .7rem;
   font-style: italic;
 }
 
-/* line 285, ../scss/components/_app-style.scss */
+/* line 314, ../scss/components/_app-style.scss */
 #my-contact-info {
   color: #CCCCCC;
 }
+/* line 315, ../scss/components/_app-style.scss */
+#my-contact-info .notch {
+  width: 0;
+  height: 0;
+  padding: 0 0 5px 0;
+  border-style: solid;
+  border-width: 20px 40px 0 40px;
+  border-color: #D1DBBE transparent transparent transparent;
+}
+/* line 319, ../scss/components/_app-style.scss */
+#my-contact-info .sub-section {
+  padding: 20px 0;
+}
 @media only screen and (min-width: 40.0625em) {
-  /* line 289, ../scss/components/_app-style.scss */
+  /* line 325, ../scss/components/_app-style.scss */
   #my-contact-info .collapse img {
     padding: 0 20px 0 0;
   }
-  /* line 294, ../scss/components/_app-style.scss */
+  /* line 330, ../scss/components/_app-style.scss */
   #my-contact-info .collapse .swapped img {
     padding: 0 0 0 40px;
   }
 }
-/* line 302, ../scss/components/_app-style.scss */
+/* line 338, ../scss/components/_app-style.scss */
 #my-contact-info h2 {
   color: #D1DBBE;
 }
-/* line 305, ../scss/components/_app-style.scss */
+/* line 341, ../scss/components/_app-style.scss */
 #my-contact-info section {
   padding: 50px 0 75px 0;
 }
-/* line 309, ../scss/components/_app-style.scss */
+/* line 345, ../scss/components/_app-style.scss */
 #my-contact-info .quote {
   height: 200px;
 }
-/* line 311, ../scss/components/_app-style.scss */
+/* line 347, ../scss/components/_app-style.scss */
 #my-contact-info .quote blockquote {
   font-size: 1.5rem;
   color: #FFFFFF;
@@ -10533,52 +10559,58 @@ h1, h2, h3, h4, h5 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 316, ../scss/components/_app-style.scss */
+/* line 352, ../scss/components/_app-style.scss */
 #my-contact-info .quote blockquote cite {
   color: #F9F9F9;
 }
+@media only screen and (max-width: 40em) {
+  /* line 347, ../scss/components/_app-style.scss */
+  #my-contact-info .quote blockquote {
+    font-size: 1rem;
+  }
+}
 
-/* line 323, ../scss/components/_app-style.scss */
+/* line 362, ../scss/components/_app-style.scss */
 footer {
   padding: 10px;
   background-color: #222222;
   width: 100%;
 }
-/* line 328, ../scss/components/_app-style.scss */
+/* line 367, ../scss/components/_app-style.scss */
 footer img {
   height: 50px;
 }
-/* line 332, ../scss/components/_app-style.scss */
+/* line 371, ../scss/components/_app-style.scss */
 footer .back-to-top {
   cursor: pointer;
 }
-/* line 338, ../scss/components/_app-style.scss */
+/* line 377, ../scss/components/_app-style.scss */
 footer .contact img {
   padding: 10px;
 }
-/* line 342, ../scss/components/_app-style.scss */
+/* line 381, ../scss/components/_app-style.scss */
 footer .contact a.email img {
   height: 40px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 323, ../scss/components/_app-style.scss */
+  /* line 362, ../scss/components/_app-style.scss */
   footer {
     padding: 5px;
   }
-  /* line 350, ../scss/components/_app-style.scss */
+  /* line 389, ../scss/components/_app-style.scss */
   footer img {
     height: 25px;
   }
-  /* line 355, ../scss/components/_app-style.scss */
+  /* line 394, ../scss/components/_app-style.scss */
   footer .contact img {
     padding: 0 0 0 5px;
   }
-  /* line 359, ../scss/components/_app-style.scss */
+  /* line 398, ../scss/components/_app-style.scss */
   footer .contact a.email img {
     height: 20px;
   }
 }
-/* line 365, ../scss/components/_app-style.scss */
+/* line 404, ../scss/components/_app-style.scss */
 footer.footer {
   position: fixed;
   transform: translate(0, 0);
@@ -10593,7 +10625,7 @@ footer.footer {
   -moz-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 372, ../scss/components/_app-style.scss */
+/* line 411, ../scss/components/_app-style.scss */
 footer.footer.stuck {
   transform: translate(0, -70px);
   z-index: 300;

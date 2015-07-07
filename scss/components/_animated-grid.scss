@@ -273,6 +273,10 @@
   position: absolute;
   width: calc(100% + 5px);
   height: calc(100vh + 5px);
+  //height: calc(100vh - 70px);
+  //@media #{$small-only} {
+  //  height: calc(100vh - 35px);
+  //}
   z-index: 100;
   top: 0;
   left: 0;
@@ -309,6 +313,10 @@
 
 .content.content--show {
   height: 100vh;
+  //height: calc(100vh + -70px);
+  //@media #{$small-only} {
+  //  height: calc(100vh - 35px);
+  //}
   pointer-events: auto;
   visibility: visible;
 }

@@ -38,7 +38,7 @@ $(document).ready(function () {
 				onEndCallbackFn();
 			}
 		},
-		gridEl = document.getElementById('my-portfolio'),
+		gridEl = document.getElementById('portfolio-carousel'),
 		gridItemsContainer = gridEl.querySelector('div.grid'),
 		contentItemsContainer = gridEl.querySelector('div.content'),
 		gridItems = gridItemsContainer.querySelectorAll('.grid__item'),
@@ -143,10 +143,18 @@ $(document).ready(function () {
 		// body overlay
 		classie.add(bodyEl, 'view-single');
 
+		var smallAdjustment = function () {
+			if (getViewport('x') <= 640) {
+				return -20;
+			} else {
+				return -20;
+			}
+		}();
+
 		setTimeout(function () {
 			// expands the placeholder
-			dummy.style.WebkitTransform = 'translate3d(-5px, ' + (scrollY() - 5) + 'px, 0px)';
-			dummy.style.transform = 'translate3d(-5px, ' + (-theGrid.offsetTop + scrollY() - 5) + 'px, 0px)';
+			dummy.style.WebkitTransform = 'translate3d(-5px, ' + (-theGrid.offsetTop + scrollY() + smallAdjustment) + 'px, 0px)';
+			dummy.style.transform = 'translate3d(-5px, ' + (-theGrid.offsetTop + scrollY() + smallAdjustment) + 'px, 0px)';
 			// disallow scroll
 			window.addEventListener('scroll', noscroll);
 		}, 25);
@@ -156,13 +164,7 @@ $(document).ready(function () {
 			classie.remove(dummy, 'placeholder--trans-in');
 			classie.add(dummy, 'placeholder--trans-out');
 			// position the content container
-			var smallAdjustment = function () {
-				if (getViewport('x') < 640) {
-					return 0;
-				} else {
-					return 0;
-				}
-			}();
+
 			contentItemsContainer.style.top = -theGrid.offsetTop + scrollY() + smallAdjustment + 'px';
 			// show the main content container
 			classie.add(contentItemsContainer, 'content--show');

@@ -17,9 +17,10 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 <body>
+<section id="intro" >
 <div class="row full-width color-1">
     <div class="row">
-        <div id="intro" class="small-12 columns text-center">
+        <div class="small-12 columns text-center">
             <section>
                 <img src="images/logo.svg" width="150px" class="logo">
 
@@ -29,17 +30,19 @@
         </div>
     </div>
 </div>
-<div class="row full-width color-2">
-    <div class="row">
-        <section id="my-process" class="small-12 columns text-justify">
-            <section>
+</section>
+<section id="my-process">
+    <div class="row full-width color-2">
+        <div class="small-1 small-centered columns notch"></div>
+        <div class="row">
+            <div class="small-12 columns text-justify">
                 <h2>How do I approach things?</h2>
 
                 <p><strong>Process. You either love it or hate it.</strong> Most people cringe their nose at the thought
                     of it. My philosophy is that while not every problem is the same, there are some basic concepts that
                     you just can't skip. Each step of the way, I try and validate the direction with user loops.</p>
 
-                <div class="row collapse">
+                <div class="row collapse sub-section">
                     <div class="small-4 small-centered medium-3 medium-uncentered columns">
                         <img src="images/icon_research.svg" data-sr="reset enter left move 50px wait 0.25s">
                     </div>
@@ -55,7 +58,7 @@
                     </div>
                 </div>
 
-                <div class="row collapse">
+                <div class="row collapse sub-section">
                     <div class="small-4 small-centered medium-3 medium-push-9 medium-uncentered columns swapped">
                         <img src="images/icon_ia.svg" data-sr="reset enter right move 50px wait 0.25s">
                     </div>
@@ -71,7 +74,7 @@
                     </div>
                 </div>
 
-                <div class="row collapse">
+                <div class="row collapse sub-section">
                     <div class="small-4 small-centered medium-3 medium-uncentered columns">
                         <img src="images/icon_interaction.svg" data-sr="reset enter left move 50px wait 0.25s">
                     </div>
@@ -88,7 +91,7 @@
                     </div>
                 </div>
 
-                <div class="row collapse">
+                <div class="row collapse sub-section">
                     <div class="small-4 small-centered medium-3 medium-push-9 medium-uncentered columns swapped">
                         <img src="images/icon_visual.svg" data-sr="reset enter right move 50px wait 0.25s">
                     </div>
@@ -103,29 +106,36 @@
                             experience.</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
     </div>
-</div>
-</div>
-<div class="row full-width color-3">
-    <div class="row ">
-        <div id="my-portfolio" class="medium-12 columns text-justify">
-            <section>
-                <div class="row collapse">
-                    <div class="small-4 small-centered medium-2 medium-uncentered columns">
+</section>
+<section id="my-portfolio">
+    <div class="row full-width color-3">
+        <div class="small-1 small-centered columns notch"></div>
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="row collapse text-justify sub-section">
+                    <div class="small-4 small-centered medium-3 medium-uncentered large-2 columns">
                         <img src="images/icon_portfolio.svg">
                     </div>
-                    <div class="medium-10 columns">
+                    <div class="medium-9 large-10 columns">
                         <h2>What have I done lately?</h2>
 
                         <p>Most of these projects required a collaborative effort from a team of project managers,
-                            developers and designers, with everyone contributing ideas. It was often my responsibility to
+                            developers and designers, with everyone contributing ideas. It was often my responsibility
+                            to
                             take the collective ideas and synthesize the results, exploring different ideas when time
                             allowed.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="portfolio-carousel" class="row sub-section">
+            <div class="small-12 columns text-justify">
                 <div class="grid">
                     <ul id="portfolio-grid" class="small-block-grid-2 medium-block-grid-3 cs-style-3">
+                        <!-- portfolio grid goes here -->
                     </ul>
                 </div>
                 <div class="content">
@@ -134,15 +144,17 @@
                     </div>
                     <button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
-</div>
-<div class="row full-width color-4">
-    <div class="row">
-        <div id="me" class="medium-12 columns text-justify">
-            <section>
-                <div class="row collapse">
+</section>
+<section id="me">
+    <div class="row full-width color-4">
+        <div class="small-1 small-centered columns notch"></div>
+        <div class="row">
+            <div class="medium-12 columns text-justify">
+
+                <div class="row collapse sub-section">
                     <div class="small-4 small-centered medium-3 medium-push-9 medium-uncentered columns swapped">
                         <img src="images/icon_about.svg">
                     </div>
@@ -150,20 +162,18 @@
                         <h2>Who am I?</h2>
 
                         <p>I am a UX designer/developer that can thrive equally well in both worlds. My knowledge and
-                            experience
-                            in both these disciplines has served me well, enabling me to contribute to most aspects of
-                            the
-                            development life cycle of a project. I have a strong passion in creating user focused
-                            experiences.
-                            From the brainstorming and requirements gathering, to rapid prototyping and production of hi
+                            experience in both these disciplines has served me well, enabling me to contribute to most aspects of
+                            the development life cycle of a project. I have a strong passion in creating user focused
+                            experiences. From the brainstorming and requirements gathering, to rapid prototyping and production of hi
                             fidelity assets, through the development and implementation phases of projects, I strive to
-                            create
-                            the best user experience possible.</p>
+                            create the best user experience possible.</p>
                     </div>
                 </div>
-                <div class="row small-collapse">
-                    <h3>Resume <small class="resume-icon"><a class="fa fa-file-pdf-o" href="files/Dan_Tecson_Resume_UX.pdf"
-                                                             target="_blank"> pdf</a></small></h3>
+                <div class="row small-collapse sub-section">
+                    <h3>Resume
+                        <small class="resume-icon"><a class="fa fa-file-pdf-o" href="files/Dan_Tecson_Resume_UX.pdf"
+                                                      target="_blank"> pdf</a></small>
+                    </h3>
 
                     <div class="medium-9 columns text-justify">
                         <div class="row work-item">
@@ -424,15 +434,18 @@
                         </div>
                     </div>
                 </div>
-            </section>
+
+            </div>
         </div>
     </div>
-</div>
-<div class="row full-width color-1">
-    <div class="row">
-        <div id="my-contact-info" class="medium-12 columns">
-            <section>
-                <div class="row collapse">
+</section>
+<section id="my-contact-info">
+    <div class="row full-width color-1">
+        <div class="small-1 small-centered columns notch"></div>
+        <div class="row">
+            <div class="medium-12 columns">
+
+                <div class="row collapse sub-section">
                     <div class="small-4 small-centered medium-2 medium-uncentered columns">
                         <img src="images/icon_chat.svg">
                     </div>
@@ -440,13 +453,12 @@
                         <h2 class="small-text-center medium-text-left">Wanna chat?</h2>
 
                         <p>Thanks for stopping by and checking out my space! Feel free to contact if you want to know
-                            anything
-                            more. We can 'talk shop' or chat about anything else.</p>
+                            anything more. We can 'talk shop' or chat about anything else.</p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="small-8 small-centered columns">
+                    <div class="small-10 small-centered medium-8 columns">
                         <div class="quote">
                             <blockquote>
                                 "You cannot NOT have a user experience" <cite>Lou Carbone</cite>
@@ -457,12 +469,10 @@
                         </div>
                     </div>
                 </div>
-
-            </section>
-
+            </div>
         </div>
     </div>
-</div>
+</section>
 <footer class="footer">
     <img src="images/logo-linear.svg" class="logo back-to-top">
 
@@ -475,6 +485,7 @@
 
     <div id="contact">
         <p>What would you like to chat about?</p>
+
         <form id="contact-form" data-abide="ajax">
             <input type="text" placeholder="your@email" id="email" required>
             <small class="error">How can I reply without your email address?</small>
@@ -484,7 +495,8 @@
     </div>
     <div class="row">
         <div id="thankyou" class="small-10 small-centered columns hide">
-            <p>I'll get back to you as soon as I can. In the meantime, I'll leave you with one of my favorite comics.</p>
+            <p>I'll get back to you as soon as I can. In the meantime, I'll leave you with one of my favorite
+                comics.</p>
             <img src="images/projectcartoon.png">
         </div>
     </div>
@@ -504,10 +516,17 @@
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/vendors/animatedGrid/main.js"></script>
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-2264393-1', 'auto');
     ga('send', 'pageview');
