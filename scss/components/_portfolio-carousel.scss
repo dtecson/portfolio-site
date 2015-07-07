@@ -7,6 +7,12 @@ h2.portolio-detail-name{
   background-color: #f0f0f0;
 }
 
+.slick-track{
+  @media #{$small-only} {
+    height: 250px;
+  }
+}
+
 .slick-prev{
   left:15px;
   &:before {

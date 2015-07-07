@@ -10136,20 +10136,27 @@ h2.portolio-detail-name {
   background-color: #f0f0f0;
 }
 
-/* line 10, ../scss/components/_portfolio-carousel.scss */
+@media only screen and (max-width: 40em) {
+  /* line 10, ../scss/components/_portfolio-carousel.scss */
+  .slick-track {
+    height: 250px;
+  }
+}
+
+/* line 16, ../scss/components/_portfolio-carousel.scss */
 .slick-prev {
   left: 15px;
 }
-/* line 12, ../scss/components/_portfolio-carousel.scss */
+/* line 18, ../scss/components/_portfolio-carousel.scss */
 .slick-prev:before {
   color: #000;
 }
 
-/* line 17, ../scss/components/_portfolio-carousel.scss */
+/* line 23, ../scss/components/_portfolio-carousel.scss */
 .slick-next {
   right: 15px;
 }
-/* line 19, ../scss/components/_portfolio-carousel.scss */
+/* line 25, ../scss/components/_portfolio-carousel.scss */
 .slick-next:before {
   color: #000;
 }
@@ -10290,167 +10297,168 @@ h1, h2, h3, h4, h5 {
 /* line 88, ../scss/components/_app-style.scss */
 #intro #i-am {
   font-size: 2.5em;
+  height: 80px;
 }
-/* line 91, ../scss/components/_app-style.scss */
+/* line 92, ../scss/components/_app-style.scss */
 #intro #i-am span {
   color: #EB2424;
 }
-/* line 96, ../scss/components/_app-style.scss */
+/* line 97, ../scss/components/_app-style.scss */
 #intro .title {
   font-size: .9rem;
 }
-/* line 98, ../scss/components/_app-style.scss */
+/* line 99, ../scss/components/_app-style.scss */
 #intro .title span {
   color: #EB2424;
 }
-/* line 101, ../scss/components/_app-style.scss */
+/* line 102, ../scss/components/_app-style.scss */
 #intro .title span.dev {
   color: #AAAAAA;
 }
 
-/* line 108, ../scss/components/_app-style.scss */
+/* line 109, ../scss/components/_app-style.scss */
 #my-process {
   color: #CCCCCC;
 }
-/* line 112, ../scss/components/_app-style.scss */
+/* line 113, ../scss/components/_app-style.scss */
 #my-process h2 {
   color: #D1DBBE;
 }
-/* line 116, ../scss/components/_app-style.scss */
+/* line 117, ../scss/components/_app-style.scss */
 #my-process h3 {
   color: #D1DBBE;
 }
-/* line 120, ../scss/components/_app-style.scss */
+/* line 121, ../scss/components/_app-style.scss */
 #my-process section {
   padding: 50px 0;
 }
-/* line 123, ../scss/components/_app-style.scss */
+/* line 124, ../scss/components/_app-style.scss */
 #my-process .row {
   padding: 20px 0 40px 0;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 129, ../scss/components/_app-style.scss */
+  /* line 130, ../scss/components/_app-style.scss */
   #my-process .collapse img {
     padding: 0 20px 0 0;
   }
-  /* line 134, ../scss/components/_app-style.scss */
+  /* line 135, ../scss/components/_app-style.scss */
   #my-process .collapse .swapped img {
     padding: 0 0 0 20px;
   }
 }
 
-/* line 144, ../scss/components/_app-style.scss */
+/* line 145, ../scss/components/_app-style.scss */
 #my-portfolio section {
   padding: 50px 0;
 }
-/* line 148, ../scss/components/_app-style.scss */
+/* line 149, ../scss/components/_app-style.scss */
 #my-portfolio li.grid__item {
   padding: 2px;
 }
-/* line 151, ../scss/components/_app-style.scss */
+/* line 152, ../scss/components/_app-style.scss */
 #my-portfolio .card {
   background-color: #666666;
   padding: 0px;
   min-height: 100px;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 159, ../scss/components/_app-style.scss */
+  /* line 160, ../scss/components/_app-style.scss */
   #my-portfolio .collapse img {
     padding: 0 20px 0 0;
   }
-  /* line 164, ../scss/components/_app-style.scss */
+  /* line 165, ../scss/components/_app-style.scss */
   #my-portfolio .collapse .swapped img {
     padding: 0 0 0 20px;
   }
 }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 175, ../scss/components/_app-style.scss */
+  /* line 176, ../scss/components/_app-style.scss */
   #me .collapse img {
     padding: 0 20px 0 0;
   }
-  /* line 180, ../scss/components/_app-style.scss */
+  /* line 181, ../scss/components/_app-style.scss */
   #me .collapse .swapped img {
     padding: 0 0 0 20px;
   }
 }
-/* line 186, ../scss/components/_app-style.scss */
+/* line 187, ../scss/components/_app-style.scss */
 #me section {
   padding: 50px 0;
 }
-/* line 190, ../scss/components/_app-style.scss */
+/* line 191, ../scss/components/_app-style.scss */
 #me h5 {
   margin-bottom: 0;
   font-weight: 600;
   color: #3F6170;
 }
-/* line 194, ../scss/components/_app-style.scss */
+/* line 195, ../scss/components/_app-style.scss */
 #me h5 small {
   font-size: .8rem;
   margin-bottom: 0;
 }
-/* line 200, ../scss/components/_app-style.scss */
+/* line 201, ../scss/components/_app-style.scss */
 #me .work-item {
   padding: 0 0 10px 0;
 }
-/* line 204, ../scss/components/_app-style.scss */
+/* line 205, ../scss/components/_app-style.scss */
 #me .summary p {
   font-size: .9rem;
   margin: 0;
   padding: 0;
 }
-/* line 210, ../scss/components/_app-style.scss */
+/* line 211, ../scss/components/_app-style.scss */
 #me .work-date {
   font-size: .7rem;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 210, ../scss/components/_app-style.scss */
+  /* line 211, ../scss/components/_app-style.scss */
   #me .work-date {
     padding: .5rem 0 0 0;
   }
 }
-/* line 219, ../scss/components/_app-style.scss */
+/* line 220, ../scss/components/_app-style.scss */
 #me .resume-icon a {
   color: #666666;
 }
-/* line 222, ../scss/components/_app-style.scss */
+/* line 223, ../scss/components/_app-style.scss */
 #me .resume-icon a:hover, #me .resume-icon a:focus {
   color: #EB2424;
 }
-/* line 231, ../scss/components/_app-style.scss */
+/* line 232, ../scss/components/_app-style.scss */
 #me #experience-meta .gutter-left {
   height: 100%;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 231, ../scss/components/_app-style.scss */
+  /* line 232, ../scss/components/_app-style.scss */
   #me #experience-meta .gutter-left {
     padding: 0 0 0 20px;
     border-left: 1px solid #AAAAAA;
   }
 }
-/* line 239, ../scss/components/_app-style.scss */
+/* line 240, ../scss/components/_app-style.scss */
 #me #experience-meta h5 {
   color: black;
 }
-/* line 242, ../scss/components/_app-style.scss */
+/* line 243, ../scss/components/_app-style.scss */
 #me #experience-meta div {
   padding: 0 0 10px 0;
 }
-/* line 245, ../scss/components/_app-style.scss */
+/* line 246, ../scss/components/_app-style.scss */
 #me #experience-meta h6 {
   margin-bottom: 0;
   font-size: .8rem;
   font-weight: 600;
   color: #3F6170;
 }
-/* line 251, ../scss/components/_app-style.scss */
+/* line 252, ../scss/components/_app-style.scss */
 #me #experience-meta ul {
   list-style: none;
   margin: 0;
   padding: 0;
   font-size: .9rem;
 }
-/* line 259, ../scss/components/_app-style.scss */
+/* line 260, ../scss/components/_app-style.scss */
 #me #experience-meta .skills-list ul li ul {
   font-size: .75rem;
   list-style: none;
@@ -10473,48 +10481,48 @@ h1, h2, h3, h4, h5 {
 #me #experience-meta .skills-list ul li ul > li > * {
   display: block;
 }
-/* line 265, ../scss/components/_app-style.scss */
+/* line 266, ../scss/components/_app-style.scss */
 #me #experience-meta .skills-list ul li ul li {
   margin: 0 .5rem 0 0;
 }
-/* line 271, ../scss/components/_app-style.scss */
+/* line 272, ../scss/components/_app-style.scss */
 #me #experience-meta .edu li {
   margin: 0 0 .4rem;
 }
-/* line 275, ../scss/components/_app-style.scss */
+/* line 276, ../scss/components/_app-style.scss */
 #me #experience-meta .edu li ul {
   margin: 0 0 0 .5rem;
   font-size: .7rem;
   font-style: italic;
 }
 
-/* line 284, ../scss/components/_app-style.scss */
+/* line 285, ../scss/components/_app-style.scss */
 #my-contact-info {
   color: #CCCCCC;
 }
 @media only screen and (min-width: 40.0625em) {
-  /* line 288, ../scss/components/_app-style.scss */
+  /* line 289, ../scss/components/_app-style.scss */
   #my-contact-info .collapse img {
     padding: 0 20px 0 0;
   }
-  /* line 293, ../scss/components/_app-style.scss */
+  /* line 294, ../scss/components/_app-style.scss */
   #my-contact-info .collapse .swapped img {
     padding: 0 0 0 40px;
   }
 }
-/* line 301, ../scss/components/_app-style.scss */
+/* line 302, ../scss/components/_app-style.scss */
 #my-contact-info h2 {
   color: #D1DBBE;
 }
-/* line 304, ../scss/components/_app-style.scss */
+/* line 305, ../scss/components/_app-style.scss */
 #my-contact-info section {
   padding: 50px 0 75px 0;
 }
-/* line 308, ../scss/components/_app-style.scss */
+/* line 309, ../scss/components/_app-style.scss */
 #my-contact-info .quote {
   height: 200px;
 }
-/* line 310, ../scss/components/_app-style.scss */
+/* line 311, ../scss/components/_app-style.scss */
 #my-contact-info .quote blockquote {
   font-size: 1.5rem;
   color: #FFFFFF;
@@ -10525,52 +10533,52 @@ h1, h2, h3, h4, h5 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 315, ../scss/components/_app-style.scss */
+/* line 316, ../scss/components/_app-style.scss */
 #my-contact-info .quote blockquote cite {
   color: #F9F9F9;
 }
 
-/* line 322, ../scss/components/_app-style.scss */
+/* line 323, ../scss/components/_app-style.scss */
 footer {
   padding: 10px;
   background-color: #222222;
   width: 100%;
 }
-/* line 327, ../scss/components/_app-style.scss */
+/* line 328, ../scss/components/_app-style.scss */
 footer img {
   height: 50px;
 }
-/* line 331, ../scss/components/_app-style.scss */
+/* line 332, ../scss/components/_app-style.scss */
 footer .back-to-top {
   cursor: pointer;
 }
-/* line 337, ../scss/components/_app-style.scss */
+/* line 338, ../scss/components/_app-style.scss */
 footer .contact img {
   padding: 10px;
 }
-/* line 341, ../scss/components/_app-style.scss */
+/* line 342, ../scss/components/_app-style.scss */
 footer .contact a.email img {
   height: 40px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 322, ../scss/components/_app-style.scss */
+  /* line 323, ../scss/components/_app-style.scss */
   footer {
     padding: 5px;
   }
-  /* line 349, ../scss/components/_app-style.scss */
+  /* line 350, ../scss/components/_app-style.scss */
   footer img {
     height: 25px;
   }
-  /* line 354, ../scss/components/_app-style.scss */
+  /* line 355, ../scss/components/_app-style.scss */
   footer .contact img {
     padding: 0 0 0 5px;
   }
-  /* line 358, ../scss/components/_app-style.scss */
+  /* line 359, ../scss/components/_app-style.scss */
   footer .contact a.email img {
     height: 20px;
   }
 }
-/* line 364, ../scss/components/_app-style.scss */
+/* line 365, ../scss/components/_app-style.scss */
 footer.footer {
   position: fixed;
   transform: translate(0, 0);
@@ -10585,7 +10593,7 @@ footer.footer {
   -moz-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 371, ../scss/components/_app-style.scss */
+/* line 372, ../scss/components/_app-style.scss */
 footer.footer.stuck {
   transform: translate(0, -70px);
   z-index: 300;

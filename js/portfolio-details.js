@@ -19,10 +19,12 @@ $(document).ready(function () {
 	var thisPortfolioInvolvement = thisPortfolio[0].involvement;
 
 	$.each(thisPortfolioImages, function (i) {
+		var div = $('<div/>')
+			.appendTo(elCarousel);
 		var anchor = $('<a/>')
 			.attr('href', portfolioImagePath + thisPortfolio[0].project + thisPortfolioImages[i])
 			.attr('data-lightbox', 'image' + i)
-			.appendTo(elCarousel);
+			.appendTo(div);
 		var img = $('<img/>')
 			.attr('src', portfolioImagePath + thisPortfolio[0].project + 'med_' + thisPortfolioImages[i])
 			.appendTo(anchor);
@@ -46,9 +48,20 @@ $(document).ready(function () {
 	});
 	$('.portfolio-detail-carousel').slick({
 		dots: true,
-		centerMode: true,
+		//centerMode: true,
 		infinite: false,
 		variableWidth: true
+	});
+
+	var mySize = Foundation.utils.is_small_only();
+	if(mySize){
+		$('.portfolio-detail-carousel').slick(
+			'slickSetOption','dots','false',true
+		);
+	}
+
+	lightbox.option({
+		'ignoreSets': true
 	});
 //        $('.portfolio-detail-carousel-nav').slick({
 //            slidesToShow: 3,

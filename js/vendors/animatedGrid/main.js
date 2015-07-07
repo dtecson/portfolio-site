@@ -241,12 +241,14 @@ $(document).ready(function () {
 
 				//create the list of images
 				$.each(thisPortfolioImages, function (i) {
+					var div = $('<div/>')
+						.appendTo(elCarousel);
 					var anchor = $('<a/>')
 						.attr('href', portfolioImagePath + thisPortfolio[0].project + thisPortfolioImages[i])
 						.attr('data-lightbox', 'image' + i)
-						.appendTo(elCarousel);
+						.appendTo(div);
 					var img = $('<img/>')
-						.attr('src', portfolioImagePath + thisPortfolio[0].project+ 'med_' + thisPortfolioImages[i])
+						.attr('src', portfolioImagePath + thisPortfolio[0].project + 'med_' + thisPortfolioImages[i])
 						.appendTo(anchor);
 				});
 
@@ -270,14 +272,27 @@ $(document).ready(function () {
 				//initialize slick carousel
 				$(elCarousel).slick({
 					dots: true,
-					centerMode: true,
 					infinite: false,
-					variableWidth: true
+					///centerMode:true,
+					variableWidth: true,
+					//initialSlide:0
 				});
+
+				//turn off dots at the small size
+				var mySize = Foundation.utils.is_small_only();
+				if(mySize){
+					$('.portfolio-detail-carousel').slick(
+						'slickSetOption','dots','false',true
+					);
+				}
 			}
 		});
 	}
 
 	init();
+
+	lightbox.option({
+		'ignoreSets': true
+	});
 
 });
