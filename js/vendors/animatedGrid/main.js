@@ -185,6 +185,7 @@ $(document).ready(function () {
 	}
 
 	function hideContent() {
+		$(".footer").addClass("stuck");
 		var gridItem = gridItems[current], contentItem = contentItems[0];
 		classie.remove(contentItem, 'content__item--show');
 		classie.remove(contentItemsContainer, 'content--show');
@@ -221,6 +222,7 @@ $(document).ready(function () {
 
 	//creates the slick carousel with lightbox
 	function loadPortfolio(contentItems, currentPortfolio) {
+		$(".footer").removeClass("stuck");
 		var elName = '.portolio-detail-name';
 		var elCarousel = '.portfolio-detail-carousel';
 		var elInvolvement = '.my-involvement';

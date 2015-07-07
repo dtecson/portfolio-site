@@ -151,7 +151,21 @@ h1, h2, h3, h4, h5 {
   .card {
     background-color: $steel;
     padding: 0px;
-    min-height: 120px;
+    min-height: 100px;
+  }
+
+  @media #{$medium-up} {
+    .collapse{
+      img{
+        padding:0 20px 0 0;
+      }
+
+      .swapped{
+        img{
+          padding:0 0 0 20px;
+        }
+      }
+    }
   }
 }
 
@@ -199,6 +213,17 @@ h1, h2, h3, h4, h5 {
       padding: .5rem 0 0 0;
     }
 
+  }
+
+  .resume-icon{
+    a{
+      color: $steel;
+
+      &:hover,
+      &:focus {
+        color: #EB2424;
+      }
+    }
   }
 
   #experience-meta {
@@ -329,6 +354,10 @@ footer{
       img {
         padding: 0 0 0 5px;
       }
+
+      a.email img{
+        height: 20px;
+      }
     }
   }
 
@@ -341,7 +370,7 @@ footer{
     @include transition-timing-function(ease-in);
     &.stuck {
       @include translate2d(0, -70px);
-      z-index: 900;
+      z-index: 300;
     }
   }
 }
