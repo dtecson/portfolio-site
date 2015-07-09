@@ -47,7 +47,7 @@ $(document)
 					.html(cards[i].name)
 					.appendTo(figcaption);
 				var span = $('<span/>')
-					.addClass('category')
+					.addClass('category hide-for-small-only')
 					.appendTo(figcaption);
 				var involveList = $('<ul/>')
 					.addClass('involve-list')

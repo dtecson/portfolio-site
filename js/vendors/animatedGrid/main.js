@@ -9,41 +9,14 @@
  * http://www.codrops.com
  */
 $(document).ready(function () {
-	var bodyEl = document.body,
+	var bodyEl = $('body'),
 		docElem = window.document.documentElement,
-		support = {transitions: Modernizr.csstransitions},
-	// transition end event name
-		transEndEventNames = {
-			'WebkitTransition': 'webkitTransitionEnd',
-			'MozTransition': 'transitionend',
-			'OTransition': 'oTransitionEnd',
-			'msTransition': 'MSTransitionEnd',
-			'transition': 'transitionend'
-		},
-		transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
-		onEndTransition = function (el, callback) {
-			var onEndCallbackFn = function (ev) {
-				if (support.transitions) {
-					if (ev.target != this) return;
-					this.removeEventListener(transEndEventName, onEndCallbackFn);
-				}
-				if (callback && typeof callback === 'function') {
-					callback.call(this);
-				}
-			};
-			if (support.transitions) {
-				el.addEventListener(transEndEventName, onEndCallbackFn);
-			}
-			else {
-				onEndCallbackFn();
-			}
-		},
-		gridEl = document.getElementById('portfolio-carousel'),
-		gridItemsContainer = gridEl.querySelector('div.grid'),
-		contentItemsContainer = gridEl.querySelector('div.content'),
-		gridItems = gridItemsContainer.querySelectorAll('.grid__item'),
-		contentItems = contentItemsContainer.querySelectorAll('.content__item'),
-		closeCtrl = contentItemsContainer.querySelector('.close-button'),
+		gridEl = $('#portfolio-carousel'),
+		gridContainer = $('div.grid'),
+		contentItemsContainer = $('#portfolio-detail-page'),
+		gridItems = $('.grid__item'),
+		contentItems = $('.content__item'),
+		//closeCtrl = contentItemsContainer.querySelector('.close-button'),
 		current = -1,
 		currentPortfolio = "testfile",
 		lockScroll = false, xscroll, yscroll,
@@ -91,9 +64,9 @@ $(document).ready(function () {
 				// index of current item
 				current = pos;
 				// simulate loading time..
-				classie.add(item, 'grid__item--loading');
+				$(item).addClass('grid__item--loading');
 				setTimeout(function () {
-					classie.add(item, 'grid__item--animate');
+					$(item).addClass('grid__item--animate');
 					// reveal/load content after the last element animates out (todo: wait for the last transition to finish)
 					setTimeout(function () {
 						loadContent(item);
@@ -102,10 +75,7 @@ $(document).ready(function () {
 			});
 		});
 
-		closeCtrl.addEventListener('click', function () {
-			// hide content
-			hideContent();
-		});
+
 
 		// keyboard esc - hide content
 		document.addEventListener('keydown', function (ev) {
@@ -122,95 +92,123 @@ $(document).ready(function () {
 	}
 
 	function loadContent(item) {
-		// add expanding element/placeholder
-		var theGrid = gridEl;
 
 		currentPortfolio = item.getAttribute("data-portfolio");
+		var gridItem = $(item);
 
-		var dummy = document.createElement('div');
-		dummy.className = 'placeholder';
+		//create placeholder div
 
-		// set the width/heigth and position
-		dummy.style.WebkitTransform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth / gridItemsContainer.offsetWidth + ',' + item.offsetHeight / getViewport('y') + ',1)';
-		dummy.style.transform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth / gridItemsContainer.offsetWidth + ',' + item.offsetHeight / getViewport('y') + ',1)';
-
-		// add transition class 
-		classie.add(dummy, 'placeholder--trans-in');
-
-		// insert it after all the grid items
-		gridItemsContainer.appendChild(dummy);
+		var placeholder = $('<div/>')
+			.addClass('placeholder')
+			.css({
+				left:gridItem.position().left+2,
+				top:gridItem.position().top+2,
+				display:'none'
+			})
+			.width(gridItem.width())
+			.height(gridItem.height())
+			.appendTo(gridContainer);
 
 		// body overlay
-		classie.add(bodyEl, 'view-single');
+		bodyEl.addClass('view-single');
 
-		var smallAdjustment = function () {
-			if (getViewport('x') <= 640) {
-				return -20;
-			} else {
-				return -20;
+
+		$(placeholder).velocity({
+			translateX: -$(gridItem).position().left + 'px',
+			translateY: -$(gridItem).offset().top + scrollY() -5 + 'px',
+			translateZ: '0px',
+			width:'100%',
+			//height:getViewport('y')-80 + 'px'
+			height:getViewport('y') + 200 + 'px',
+			opacity:1
+		},{
+			display:'block',
+			easing:"easeInSine",
+			duration: 200,
+			begin:function(elements){
+				// disallow scroll
+				window.addEventListener('scroll', noscroll);
+			},
+			complete: function(elements){
+				// show content item:
+				//contentItemsContainer.css({
+				//	top:$(elements).position().top + 'px'
+				//});
+				contentItemsContainer.addClass('content--show');
+				contentItems.addClass('content__item--show');
+				//load portfolio data
+				//need to know the exact DOM elements to target
+				loadPortfolio(contentItems, currentPortfolio);
+
+				// sets overflow hidden to the body and allows the switch to the content scroll
+				$('body').addClass('noscroll');
+
+				isAnimating = false;
+
+				var delay = (function(){
+					var timer = 0;
+					return function(callback, ms){
+						clearTimeout (timer);
+						timer = setTimeout(callback, ms);
+					};
+				})();
+
+				$(window).on('resize', function(e){
+					contentItemsContainer.css({
+						opacity:0
+					});
+					delay(function(){
+						//hideContent();
+						$(elements).velocity({
+							translateY: -$(gridItem).offset().top + scrollY() -5 + 'px',
+							translateZ: '0px',
+							height:'100vh'
+						},{
+							easing:"easeInSine",
+							duration: 200,
+							complete:function(element){
+								contentItemsContainer.css({
+									opacity:1
+								});
+							}
+						});
+
+						//contentItemsContainer.css({
+						//	top:$(elements).position().top + 'px'
+						//});
+					}, 500);
+				});
 			}
-		}();
-
-		setTimeout(function () {
-			// expands the placeholder
-			dummy.style.WebkitTransform = 'translate3d(-5px, ' + (-theGrid.offsetTop + scrollY() + smallAdjustment) + 'px, 0px)';
-			dummy.style.transform = 'translate3d(-5px, ' + (-theGrid.offsetTop + scrollY() + smallAdjustment) + 'px, 0px)';
-			// disallow scroll
-			window.addEventListener('scroll', noscroll);
-		}, 25);
-
-		onEndTransition(dummy, function () {
-			// add transition class 
-			classie.remove(dummy, 'placeholder--trans-in');
-			classie.add(dummy, 'placeholder--trans-out');
-			// position the content container
-
-			contentItemsContainer.style.top = -theGrid.offsetTop + scrollY() + smallAdjustment + 'px';
-			// show the main content container
-			classie.add(contentItemsContainer, 'content--show');
-			// show content item:
-			//classie.add(contentItems[current], 'content__item--show');
-			classie.add(contentItems[0], 'content__item--show');
-
-			//load portfolio data
-			//need to know the exact DOM elements to target
-			loadPortfolio(contentItems, currentPortfolio);
-
-
-			// show close control
-			classie.add(closeCtrl, 'close-button--show');
-			// sets overflow hidden to the body and allows the switch to the content scroll
-			classie.addClass(bodyEl, 'noscroll');
-
-			isAnimating = false;
 		});
 	}
 
 	function hideContent() {
 		$(".footer").addClass("stuck");
-		var gridItem = gridItems[current], contentItem = contentItems[0];
-		classie.remove(contentItem, 'content__item--show');
-		classie.remove(contentItemsContainer, 'content--show');
-		classie.remove(closeCtrl, 'close-button--show');
-		classie.remove(bodyEl, 'view-single');
-		setTimeout(function () {
-			var dummy = gridItemsContainer.querySelector('.placeholder');
-			classie.removeClass(bodyEl, 'noscroll');
-			dummy.style.WebkitTransform = 'translate3d(' + gridItem.offsetLeft + 'px, ' + gridItem.offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth / gridItemsContainer.offsetWidth + ',' + gridItem.offsetHeight / getViewport('y') + ',1)';
-			dummy.style.transform = 'translate3d(' + gridItem.offsetLeft + 'px, ' + gridItem.offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth / gridItemsContainer.offsetWidth + ',' + gridItem.offsetHeight / getViewport('y') + ',1)';
-			onEndTransition(dummy, function () {
-				// reset content scroll..
-				contentItem.parentNode.scrollTop = 0;
-				gridItemsContainer.removeChild(dummy);
-				classie.remove(gridItem, 'grid__item--loading');
-				classie.remove(gridItem, 'grid__item--animate');
-				lockScroll = false;
-				window.removeEventListener('scroll', noscroll);
-			});
+		contentItemsContainer.removeClass('content--show');
+		contentItems.removeClass('content__item--show');
+		closeCtrl.removeClass('close-button--show');
+		//bodyEl.removeClass('view-single');
 
-			// reset current
-			current = -1;
-		}, 25);
+		//reset scroll
+		lockScroll = false;
+		contentItems.scrollTop(0);
+		bodyEl.removeClass('noscroll');
+		window.removeEventListener('scroll', noscroll);
+
+		$('.placeholder').velocity(
+			'reverse',{
+				easing:"easeOuSine",
+				duration: 400,
+			complete: function(elements){
+				$(elements).remove();
+
+				$(gridItems[current]).removeClass('grid__item--loading');
+				$(gridItems[current]).removeClass('grid__item--animate');
+
+
+				current = -1;
+			}
+		});
 	}
 
 	function noscroll() {
@@ -287,6 +285,13 @@ $(document).ready(function () {
 						'slickSetOption','dots','false',true
 					);
 				}
+				// show close control
+				closeCtrl = $('.close-button');
+				closeCtrl.on('click', function () {
+					// hide content
+					hideContent();
+				});
+				closeCtrl.addClass('close-button--show');
 			}
 		});
 	}
@@ -296,5 +301,4 @@ $(document).ready(function () {
 	lightbox.option({
 		'ignoreSets': true
 	});
-
 });

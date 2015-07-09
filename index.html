@@ -17,19 +17,19 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 <body>
-<section id="intro" >
-<div class="row full-width color-1">
-    <div class="row">
-        <div class="small-12 columns text-center">
-            <section>
-                <img src="images/logo.svg" width="150px" class="logo">
+<section id="intro">
+    <div class="row full-width color-1">
+        <div id="top" class="row">
+            <div class="small-12 columns text-center">
+                <section>
+                    <img src="images/logo.svg" width="150px" class="logo">
 
-                <div class="title"><span>UX</span> Designer / <span class="dev">Developer</span></div>
-                <div id="i-am"><h2>I am passionate about <span id="whoAmI">user experiences</span></h2></div>
-            </section>
+                    <div class="title"><span>UX</span> Designer / <span class="dev">Developer</span></div>
+                    <div id="i-am"><h2>I am passionate about <span id="whoAmI">user experiences</span></h2></div>
+                </section>
+            </div>
         </div>
     </div>
-</div>
 </section>
 <section id="my-process">
     <div class="row full-width color-2">
@@ -138,12 +138,6 @@
                         <!-- portfolio grid goes here -->
                     </ul>
                 </div>
-                <div class="content">
-                    <div class="scroll-wrap">
-                        <article class="content__item"></article>
-                    </div>
-                    <button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
-                </div>
             </div>
         </div>
     </div>
@@ -162,9 +156,11 @@
                         <h2>Who am I?</h2>
 
                         <p>I am a UX designer/developer that can thrive equally well in both worlds. My knowledge and
-                            experience in both these disciplines has served me well, enabling me to contribute to most aspects of
+                            experience in both these disciplines has served me well, enabling me to contribute to most
+                            aspects of
                             the development life cycle of a project. I have a strong passion in creating user focused
-                            experiences. From the brainstorming and requirements gathering, to rapid prototyping and production of hi
+                            experiences. From the brainstorming and requirements gathering, to rapid prototyping and
+                            production of hi
                             fidelity assets, through the development and implementation phases of projects, I strive to
                             create the best user experience possible.</p>
                     </div>
@@ -480,9 +476,22 @@
             src="images/email.svg"></a><a class="linkedin" href="https://www.linkedin.com/in/dantecson" target="_blank"><img
             src="images/linkedin.svg"></a></div>
 </footer>
+
+<!--portfolio detail page-->
+<div id="portfolio-detail-page" class="row content collapse">
+    <div class="small-12 columns">
+        <div id="portfolio-detail">
+            <div class="scroll-wrap">
+                <article class="content__item"></article>
+            </div>
+            <!--<button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>-->
+        </div>
+    </div>
+</div>
+
+<!--form modal-->
 <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
     <h2 id="modalTitle">Got something to ask?</h2>
-
     <div id="contact">
         <p>What would you like to chat about?</p>
 
@@ -512,6 +521,8 @@
 <script type="text/javascript" src="bower_components/readmore/readmore.min.js"></script>
 <script type="text/javascript" src="bower_components/scrollReveal.js/dist/scrollReveal.min.js"></script>
 <script type="text/javascript" src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="bower_components/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="bower_components/velocity/velocity.ui.min.js"></script>
 <script type="text/javascript" src="js/portfolioData.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/vendors/animatedGrid/main.js"></script>

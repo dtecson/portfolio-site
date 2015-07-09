@@ -9758,10 +9758,11 @@ th.hide-for-touch {
 /* main content */
 /* line 301, ../scss/components/_animated-grid.scss */
 .content {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  margin: 0 auto;
   pointer-events: none;
   height: 0;
   /* Avoid second scroll bar in Chrome! */
@@ -9770,7 +9771,7 @@ th.hide-for-touch {
   overflow: hidden;
 }
 
-/* line 314, ../scss/components/_animated-grid.scss */
+/* line 316, ../scss/components/_animated-grid.scss */
 .content.content--show {
   height: 100vh;
   pointer-events: auto;
@@ -9778,42 +9779,37 @@ th.hide-for-touch {
 }
 
 /* scroll helper wrap */
-/* line 325, ../scss/components/_animated-grid.scss */
+/* line 327, ../scss/components/_animated-grid.scss */
 .scroll-wrap {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+  height: 100vh;
   z-index: 1;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
 /* single content item */
-/* line 337, ../scss/components/_animated-grid.scss */
+/* line 339, ../scss/components/_animated-grid.scss */
 .content__item {
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
-  overflow: hidden;
-  height: 0;
   opacity: 0;
   padding: 30px 30px 40px 30px;
   pointer-events: none;
   font-size: 0.85em;
 }
 
-/* line 348, ../scss/components/_animated-grid.scss */
+/* line 350, ../scss/components/_animated-grid.scss */
 .content__item p {
   max-width: 1200px;
   margin: 0 auto 1em auto;
   text-align: justify;
 }
 
-/* line 354, ../scss/components/_animated-grid.scss */
+/* line 356, ../scss/components/_animated-grid.scss */
 .content__item.content__item--show {
-  height: auto;
   min-height: 100vh;
   opacity: 1;
   pointer-events: auto;
@@ -9822,14 +9818,14 @@ th.hide-for-touch {
 }
 
 /* content elements */
-/* line 364, ../scss/components/_animated-grid.scss */
+/* line 366, ../scss/components/_animated-grid.scss */
 .category--full {
   font-size: 1.25em;
   margin-bottom: 20px;
   color: #81c483;
 }
 
-/* line 370, ../scss/components/_animated-grid.scss */
+/* line 372, ../scss/components/_animated-grid.scss */
 .category--full,
 .title--full,
 .meta--full .meta__author,
@@ -9838,19 +9834,19 @@ th.hide-for-touch {
   opacity: 0;
 }
 
-/* line 378, ../scss/components/_animated-grid.scss */
+/* line 380, ../scss/components/_animated-grid.scss */
 .content__item p {
   opacity: 0;
 }
 
-/* line 382, ../scss/components/_animated-grid.scss */
+/* line 384, ../scss/components/_animated-grid.scss */
 .category--full,
 .title--full {
   -webkit-transform: translate3d(0, 40px, 0);
   transform: translate3d(0, 40px, 0);
 }
 
-/* line 388, ../scss/components/_animated-grid.scss */
+/* line 390, ../scss/components/_animated-grid.scss */
 .meta--full .meta__author,
 .meta--full .meta__date,
 .meta--full .meta__reading-time {
@@ -9858,7 +9854,7 @@ th.hide-for-touch {
   transform: scale3d(0.5, 0.5, 1);
 }
 
-/* line 395, ../scss/components/_animated-grid.scss */
+/* line 397, ../scss/components/_animated-grid.scss */
 .content__item--show .category--full,
 .content__item--show .title--full,
 .content__item--show .meta--full .meta__author,
@@ -9873,32 +9869,32 @@ th.hide-for-touch {
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-/* line 409, ../scss/components/_animated-grid.scss */
+/* line 411, ../scss/components/_animated-grid.scss */
 .content__item--show .category--full,
 .content__item--show .title--full {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 
-/* line 415, ../scss/components/_animated-grid.scss */
+/* line 417, ../scss/components/_animated-grid.scss */
 .content__item--show .title--full {
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
 }
 
-/* line 421, ../scss/components/_animated-grid.scss */
+/* line 423, ../scss/components/_animated-grid.scss */
 .content__item--show .meta--full .meta__date {
   -webkit-transition-delay: 0.27s;
   transition-delay: 0.27s;
 }
 
-/* line 426, ../scss/components/_animated-grid.scss */
+/* line 428, ../scss/components/_animated-grid.scss */
 .content__item--show .meta--full .meta__reading-time {
   -webkit-transition-delay: 0.34s;
   transition-delay: 0.34s;
 }
 
-/* line 431, ../scss/components/_animated-grid.scss */
+/* line 433, ../scss/components/_animated-grid.scss */
 .content__item--show.content__item p {
   opacity: 1;
   -webkit-transition: opacity 0.5s 0.25s;
@@ -9906,7 +9902,7 @@ th.hide-for-touch {
 }
 
 /* close button (for content and sidebar) */
-/* line 438, ../scss/components/_animated-grid.scss */
+/* line 440, ../scss/components/_animated-grid.scss */
 .close-button {
   position: absolute;
   border: none;
@@ -9931,35 +9927,35 @@ th.hide-for-touch {
   transition: opacity 0.3s;
 }
 
-/* line 462, ../scss/components/_animated-grid.scss */
+/* line 464, ../scss/components/_animated-grid.scss */
 .close-button span {
   display: none;
 }
 
-/* line 466, ../scss/components/_animated-grid.scss */
+/* line 468, ../scss/components/_animated-grid.scss */
 .close-button:hover {
   color: #7b7b7b;
   background-color: transparent;
 }
 
 /* show class for content close button */
-/* line 472, ../scss/components/_animated-grid.scss */
+/* line 474, ../scss/components/_animated-grid.scss */
 .close-button--show {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* line 477, ../scss/components/_animated-grid.scss */
+/* line 479, ../scss/components/_animated-grid.scss */
 .category ul li {
   font-size: .8em;
   color: #AAAAAA;
   display: inline;
 }
-/* line 481, ../scss/components/_animated-grid.scss */
+/* line 483, ../scss/components/_animated-grid.scss */
 .category ul li:after {
   content: " | ";
 }
-/* line 485, ../scss/components/_animated-grid.scss */
+/* line 487, ../scss/components/_animated-grid.scss */
 .category ul li:last-child:after {
   content: " ";
 }

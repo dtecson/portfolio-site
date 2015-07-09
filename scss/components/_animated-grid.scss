@@ -299,10 +299,12 @@
 
 /* main content */
 .content {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right:0;
+  margin: 0 auto;
+  //width: 100%;
   pointer-events: none;
   height: 0;
   /* Avoid second scroll bar in Chrome! */
@@ -323,11 +325,11 @@
 
 /* scroll helper wrap */
 .scroll-wrap {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+  height: 100vh;
+  //left: 0;
+  //top: 0;
   z-index: 1;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -335,11 +337,11 @@
 
 /* single content item */
 .content__item {
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
-  overflow: hidden;
-  height: 0;
+  //overflow: hidden;
+  //height: 0;
   opacity: 0;
   padding: 30px 30px 40px 30px;
   pointer-events: none;
@@ -352,7 +354,7 @@
 }
 
 .content__item.content__item--show {
-  height: auto;
+  //height: auto;
   min-height: 100vh;
   opacity: 1;
   pointer-events: auto;
