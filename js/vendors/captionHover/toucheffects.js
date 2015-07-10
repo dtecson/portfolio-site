@@ -67,7 +67,7 @@
 			window.classie = classie;
 		}
 
-		[].slice.call( document.querySelectorAll( 'ul.grid > li > figure' ) ).forEach( function( el, i ) {
+		[].slice.call( document.querySelectorAll( '.grid ul > li > figure' ) ).forEach( function( el, i ) {
 			el.querySelector( 'figcaption > a' ).addEventListener( 'touchstart', function(e) {
 				e.stopPropagation();
 			}, false );

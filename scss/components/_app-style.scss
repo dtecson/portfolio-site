@@ -98,7 +98,8 @@ h1, h2, h3, h4, h5 {
 
   section {
     padding: 175px 0 250px 0;
-    @media #{$small-up} {
+
+    @media #{$small-only} {
       padding: 100px 0 100px 0;
     }
   }
